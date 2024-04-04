@@ -20,7 +20,7 @@ export default function Home() {
             width: "100%",
             height: "100vh",
             backgroundPosition: "top",
-            backgroundSize: "50%",
+            backgroundSize: "700px",
             backgroundRepeat: "no-repeat",
             display: "flex",
             flexDirection: "column",
@@ -64,7 +64,7 @@ export default function Home() {
         >
           <Box
             sx={{
-              width: "20%",
+              width: "350px",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -90,12 +90,14 @@ export default function Home() {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
-                justifyContent:'space-evenly',
+                justifyContent:'start',
                 my: 3,
-                width:'100%'
+                width:'100%',
+                gap:3,
+                ml:4
               }}
             >
-              <Button sx={{ color: "#DAC5A7", border: "1px solid #262421" }}>
+              <Button sx={{ color: "#DAC5A7", border: "2px solid #262421", borderRadius:'50%', width:'50px', height:'50px' }}>
                 <ArrowOutwardIcon />
               </Button>{" "}
               <Typography sx={{ color: "#DAC5A7" }}>ABOUT WEBDESIGN</Typography>
@@ -103,7 +105,7 @@ export default function Home() {
           </Box>
           <Box
             sx={{
-              width: "20%",
+              width: "350px",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -115,13 +117,13 @@ export default function Home() {
             }}
           >
             <Stack direction={"column"}>
-              <Typography sx={{ color: "#DAC5A7" }}>01</Typography>
+              <Typography sx={{ color: "#DAC5A7" }}>02</Typography>
               <Typography sx={{ color: "#DAC5A7", my: 1 }}>
-                WEB DESIGN
+                DEVELOPMENT
               </Typography>
               <Typography sx={{ color: "#DAC5A7" }}>
-                Visually stunning web designs that <br /> captivate your
-                audience by blending your <br /> brand voice and customer needs.
+                Get custom web development solution that <br /> are tailored
+                to your specification, designed <br /> to deliver a flawless user experience
               </Typography>
             </Stack>
             <Stack
@@ -129,20 +131,22 @@ export default function Home() {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
-                justifyContent:'space-evenly',
+                justifyContent:'start',
                 my: 3,
-                width:'100%'
+                width:'100%',
+                gap:3,
+                ml:4
               }}
             >
-              <Button sx={{ color: "#DAC5A7", border: "1px solid #262421" }}>
+              <Button sx={{ color: "#DAC5A7", border: "2px solid #262421" , borderRadius:'50%', width:'50px', height:'50px' }}>
                 <ArrowOutwardIcon />
               </Button>{" "}
-              <Typography sx={{ color: "#DAC5A7" }}>ABOUT WEBDESIGN</Typography>
+              <Typography sx={{ color: "#DAC5A7" }}>ABOUT WEBFLOW</Typography>
             </Stack>
           </Box>
           <Box
             sx={{
-              width: "20%",
+              width: "350px",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -154,13 +158,13 @@ export default function Home() {
             }}
           >
             <Stack direction={"column"}>
-              <Typography sx={{ color: "#DAC5A7" }}>01</Typography>
+              <Typography sx={{ color: "#DAC5A7" }}>03</Typography>
               <Typography sx={{ color: "#DAC5A7", my: 1 }}>
-                WEB DESIGN
+                CONTENT & SEO
               </Typography>
               <Typography sx={{ color: "#DAC5A7" }}>
-                Visually stunning web designs that <br /> captivate your
-                audience by blending your <br /> brand voice and customer needs.
+                Proven SEO strategies that enhance your <br /> online performance, 
+                bringing you to the  <br /> forefront of organic web result.
               </Typography>
             </Stack>
             <Stack
@@ -168,15 +172,17 @@ export default function Home() {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
-                justifyContent:'space-evenly',
+                justifyContent:'start',
                 my: 3,
-                width:'100%'
+                width:'100%',
+                gap:3,
+                ml:4
               }}
             >
-              <Button sx={{ color: "#DAC5A7", border: "1px solid #262421" }}>
+              <Button sx={{ color: "#DAC5A7", border: "2px solid #262421" , borderRadius:'50%', width:'50px', height:'50px' }}>
                 <ArrowOutwardIcon />
               </Button>{" "}
-              <Typography sx={{ color: "#DAC5A7" }}>ABOUT WEBDESIGN</Typography>
+              <Typography sx={{ color: "#DAC5A7" }}>ABOUT SEO</Typography>
             </Stack>
           </Box>
         </Box>
