@@ -5,11 +5,12 @@ import About from './pages/About'
 import Work from './pages/Work'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
+import Navbar from './components/Navbar'
 
 export default function App() {
   return (
     <>
-      
+      <Navbar/>
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/services' element={<Services />}/>
