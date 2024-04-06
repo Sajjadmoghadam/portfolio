@@ -42,7 +42,7 @@ export default function Contact() {
     line-height: 1.5;
     padding: 12px;
     border-radius: 12px 12px 0 12px;
-    color:#DAC5A7;
+    color:C;
     background:#DAC5A726};
     border: 1px solid #DAC5A726;
     box-shadow: 0px 2px 2px ${
@@ -122,8 +122,8 @@ export default function Contact() {
                   variant="outlined"
                   sx={{
                     backgroundColor: "#DAC5A726",
-                    border: "1px solid #DAC5A726",
-                    color: "#DAC5A7",
+                    border: "1px solid #DAC5A726"
+                    
                   }}
                 />
                 <TextField
