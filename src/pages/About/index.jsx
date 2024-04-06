@@ -1,7 +1,10 @@
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography, Divider } from "@mui/material";
 import React from "react";
 import SouthIcon from "@mui/icons-material/South";
-
+import CallMadeIcon from "@mui/icons-material/CallMade";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import MailIcon from "@mui/icons-material/Mail";
 export default function About() {
   return (
     <>
@@ -55,7 +58,7 @@ export default function About() {
               mt={25}
               sx={{
                 height: "750px",
-                width: "800px",
+                width: "700px",
                 backgroundColor: "#DAC5A726",
                 padding: "50px ",
               }}
@@ -97,66 +100,193 @@ export default function About() {
                 </Box>
               </Stack>
             </Stack>
-            <Stack mt={5} width="100%">
-              <Box gap="20px" sx={{ display: "flex", flexDirection: "row" ,}}>
-                <Button
-                  sx={{
-                    color: "#DAC5A7",
-                    fontSize: "13px",
-                    marginTop: "30px",
-                    backgroundColor: "#DAC5A726",
-                    padding: "10px 25px",
-                    width: "285px",
-                    height: "56px",
-                  }}
-                >
-                  My Services
-                  <SouthIcon
-                    fontSize="medium"
-                    sx={{
-                      color: "#DAC5A7",
-                    }}
-                  />
+            <Stack mt={5} gap="30px" flexDirection="row">
+              <Box
+                sx={{
+                  backgroundColor: "#DAC5A726",
+                  width: "244px",
+                  height: "56px",
+                  alignItems: "center",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  padding: "1px",
+                }}
+              >
+                <Button startIcon={<LinkedInIcon />} sx={{ color: "#DAC5A7" }}>
+                  Linkedin
                 </Button>
-                <Button
-                  sx={{
-                    color: "#DAC5A7",
-                    fontSize: "13px",
-                    marginTop: "30px",
-                    backgroundColor: "#DAC5A726",
-                    padding: "10px 25px",
-                    width: "285px",
-                    height: "56px",
-                  }}
-                >
-                  My Services
-                  <SouthIcon
-                    fontSize="medium"
-                    sx={{
-                      color: "#DAC5A7",
-                    }}
-                  />
-                </Button>{" "}
-                <Button
-                  sx={{
-                    color: "#DAC5A7",
-                    fontSize: "13px",
-                    marginTop: "30px",
-                    backgroundColor: "#DAC5A726",
-                    padding: "10px 25px",
-                    width: "290px",
-                    height: "56px",
-                  }}
-                >
-                  My Services
-                  <SouthIcon
-                    fontSize="medium"
-                    sx={{
-                      color: "#DAC5A7",
-                    }}
-                  />
+                <CallMadeIcon sx={{ color: "#DAC5A7" }} />
+              </Box>
+              <Box
+                sx={{
+                  backgroundColor: "#DAC5A726",
+                  width: "243px",
+                  height: "56px",
+                  alignItems: "center",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  padding: "1px",
+                }}
+              >
+                <Button startIcon={<GitHubIcon />} sx={{ color: "#DAC5A7" }}>
+                  Github
                 </Button>
+                <CallMadeIcon sx={{ color: "#DAC5A7" }} />
+              </Box>{" "}
+              <Box
+                sx={{
+                  backgroundColor: "#DAC5A726",
+                  width: "244px",
+                  height: "56px",
+                  alignItems: "center",
+                  display: "flex",
+                  justifyContent: "space-around",
+                  padding: "1px",
+                }}
+              >
+                <Button startIcon={<MailIcon />} sx={{ color: "#DAC5A7" }}>
+                  Email
+                </Button>
+                <CallMadeIcon sx={{ color: "#DAC5A7" }} />
+              </Box>
+            </Stack>
+            <Stack
+              mt={5}
+              sx={{
+                height: "500px",
+                width: "700px",
+                backgroundColor: "#DAC5A726",
+                padding: "50px ",
+                flexDirection: "column",
+              }}
+            >
+              <Typography color="#DAC5A799" fontSize="13px">
+                Awards
+              </Typography>
+              <Box mt={3} sx={{ display: "flex", flexDirection: "column" }}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin:'20px 0'
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Awwwards SOTD
+                  </Typography>
+                  <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                    
+                  }}
+                />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin:'20px 0'
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Awwwards SOTD
+                  </Typography>
+                  <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                    
+                  }}
+                />                <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  margin:'20px 0'
+                }}
+              >
+                <Typography
+                  variant="h5"
+                  sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                >
+                  Awwwards SOTD
+                </Typography>
+                <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+              </Box>
+              <Divider
+                sx={{
+                  borderColor: "#DAC5A726",
+                  
+                }}
+              />                <Box
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                margin:'20px 0'
+              }}
+            >
+              <Typography
+                variant="h5"
+                sx={{ color: "#DAC5A7", fontSize: "20px" }}
+              >
+                Awwwards SOTD
+              </Typography>
+              <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+            </Box>
+            <Divider
+              sx={{
+                borderColor: "#DAC5A726",
                 
+              }}
+            />                <Box
+            sx={{
+              display: "flex",
+              justifyContent: "space-between",
+              margin:'20px 0'
+            }}
+          >
+            <Typography
+              variant="h5"
+              sx={{ color: "#DAC5A7", fontSize: "20px" }}
+            >
+              Awwwards SOTD
+            </Typography>
+            <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+          </Box>
+          <Divider
+            sx={{
+              borderColor: "#DAC5A726",
+              
+            }}
+          />
+                          <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin:'20px 0'
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Awwwards SOTD
+                  </Typography>
+                  <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                    
+                  }}
+                />
               </Box>
             </Stack>
           </Box>
