@@ -9,8 +9,9 @@ export default function Services() {
         sx={{
           width: "100%",
           height: "100%",
-          backgroundColor: "#000000	",
+          backgroundColor: "#000000",
           flexDirection: "column",
+          pt:'200px'
         }}
       >
         <Stack

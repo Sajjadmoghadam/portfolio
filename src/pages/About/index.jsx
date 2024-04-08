@@ -15,6 +15,7 @@ export default function About() {
           backgroundColor: "#000000	",
           flexDirection: "column",
           overflow: "hidden",
+          pt:'200px'
         }}
       >
         <Stack
@@ -27,8 +28,8 @@ export default function About() {
             justifyContent: "space-around",
           }}
         >
-          <Box sx={{ width: "40%", height: "590px" }}>
-            <img width="100%" height="60%" src="assets/aboutimg1.jfif" />
+          <Box sx={{ width: "30%", height: "590px", position:'fixed', top:100, left:0 }}>
+            <img width="100%" height="60%" src="assets/aboutimg1.jfif" alt="img" />
           </Box>
           <Box sx={{ width: "70%", height: "350px" }}>
             <Typography variant="h3" color="#DAC5A7">

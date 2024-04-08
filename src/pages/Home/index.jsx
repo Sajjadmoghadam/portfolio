@@ -4,7 +4,6 @@ import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Divider from "@mui/material/Divider";
-import Chip from "@mui/material/Chip";
 import { styled } from "@mui/material/styles";
 
 const Root = styled("div")(({ theme }) => ({
@@ -826,6 +825,37 @@ export default function Home() {
                   </Stack>
                 </Box>
               </Stack>
+            </Box>
+          </Stack>
+        </Box>
+        <Box
+          sx={{
+            backgroundImage: "url(assets/homepagePhoto.png)",
+            width: "100%",
+            height: "100vh",
+            backgroundPosition: "top",
+            backgroundSize: "700px",
+            backgroundRepeat: "no-repeat",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "end",
+            mt: 5,
+          }}
+        >
+          <Typography sx={{color: "#DAC5A7",fontSize:'80px',mb:6}}>Yousef Boroushaki</Typography>
+          <Stack flexDirection={"row"} sx={{gap:'90px', ml:20}}>
+            <Typography sx={{color:'#DAC5A7', fontSize:'20px'}} variant="button">
+              A website that leaves <br />a lasting impression !
+            </Typography>
+            <Box>
+              <Typography  sx={{color:'#DAC5A7'}}>
+                Hi, I'm Yousef Boroushaki - a freelancer specializing in premium web <br /> 
+                development I'm passionate about creating unique and effective solutions <br/>
+                for my clients, and I bring a personal touch to every project. Let's <br/>
+                work together to bring your vision to life!
+              </Typography>
+              <Stack></Stack>
             </Box>
           </Stack>
         </Box>
