@@ -66,7 +66,6 @@ export default function Contact() {
   );
   return (
     <>
-    <Typography>ufufuf</Typography>
       <Stack sx={{ backgroundColor: "#000000", flexDirection: "column" }}>
         <Box
           sx={{
