@@ -88,7 +88,7 @@ export default function About() {
               mt={25}
               sx={{
                 // height: "750px",
-                width: "85%",
+                width: "90%",
                 backgroundColor: "#DAC5A726",
                 padding: "50px ",
               }}
@@ -130,11 +130,11 @@ export default function About() {
                 </Box>
               </Stack>
             </Stack>
-            <Stack mt={5} gap="30px" flexDirection="row">
+            <Stack mt={5} gap="30px" flexDirection="row" sx={{width:'90%'}}>
               <Box
                 sx={{
                   backgroundColor: "#DAC5A726",
-                  width: "244px",
+                  width: "33%",
                   height: "56px",
                   alignItems: "center",
                   display: "flex",
@@ -150,7 +150,7 @@ export default function About() {
               <Box
                 sx={{
                   backgroundColor: "#DAC5A726",
-                  width: "243px",
+                  width: "33%",
                   height: "56px",
                   alignItems: "center",
                   display: "flex",
@@ -166,7 +166,7 @@ export default function About() {
               <Box
                 sx={{
                   backgroundColor: "#DAC5A726",
-                  width: "244px",
+                  width: "33%",
                   height: "56px",
                   alignItems: "center",
                   display: "flex",
@@ -184,7 +184,7 @@ export default function About() {
               mt={5}
               sx={{
                 height: "500px",
-                width: "700px",
+                width: "90%",
                 backgroundColor: "#DAC5A726",
                 padding: "50px ",
                 flexDirection: "column",
