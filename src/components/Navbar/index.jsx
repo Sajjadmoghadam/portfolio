@@ -39,8 +39,8 @@ function Navbar() {
       sx={{
         bgcolor: "rgba(255,255,255,.14)",
         backdropFilter: "blur(8px)",
-        width: {xl:'35%', lg:'40%',md:'54%',sm:'35%' },
-        mx: {md:'22%',lg:'28%', sm:'32%', xl:'32%'},
+        width: {xl:'35%', lg:'40%',md:'54%',sm:'35%', xs:'40%' },
+        mx: {md:'22%',lg:'28%', sm:'32%', xl:'32%', xs:'30%'},
         my: 4,
         border: "1px solid rgba(255,255,255,.2)",
       }}

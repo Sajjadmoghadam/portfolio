@@ -45,11 +45,11 @@ export default function Home() {
             sx={{
               color: "#DAC5A7",
               textAlign: "center",
-              fontSize: "90px",
+              fontSize: {lg:'90px', md:'60px', sm:'40px' ,xs:'30px'}
             }}
           >
             Full Stack <br />{" "}
-            <Typography sx={{ fontStyle: "italic", fontSize: "90px" }}>
+            <Typography sx={{ fontStyle: "italic", fontSize: {lg:'90px', md:'60px', sm:'40px' ,xs:'30px'} }}>
               {" "}
               Web Developer
             </Typography>
@@ -73,11 +73,12 @@ export default function Home() {
             width: "100%",
             gap: 5,
             mt: 7,
+            flexDirection:{lg:'row', md:'row', sm:'column', xs:'column'}
           }}
         >
           <Box
             sx={{
-              width: "350px",
+              width: {lg:'30%', md:'30%', sm:'40%', xs:'50%'},
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -126,7 +127,7 @@ export default function Home() {
           </Box>
           <Box
             sx={{
-              width: "350px",
+              width: {lg:'30%', md:'30%', sm:'40%', xs:'50%'},
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -176,7 +177,7 @@ export default function Home() {
           </Box>
           <Box
             sx={{
-              width: "350px",
+              width: {lg:'30%', md:'30%', sm:'40%', xs:'50%'},
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
