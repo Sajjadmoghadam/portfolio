@@ -5,3 +5,11 @@
   text-decoration: none;
   list-style: none;
 }
+h3{
+  font-family: 'Satoshi-Regular';
+}
+@font-face {
+  font-family: "Satoshi-Regular";   /*Can be any text*/
+  src: local("Satoshi-Regular"),
+    url("../src/Fonts/Satoshi-Regular.ttf") format("truetype");
+}

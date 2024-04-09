@@ -26,7 +26,7 @@ export default function Services() {
           }}
         >
           <Box>
-            <Typography variant="h3" sx={{ color: "#DAC5A7" }}>
+            <Typography variant="h3" sx={{ color: "#DAC5A7",  }}>
               Full Stack
             </Typography>
             <Typography variant="h2" sx={{ color: "#DAC5A7" }}>
