@@ -39,10 +39,10 @@ function Navbar() {
       sx={{
         bgcolor: "rgba(255,255,255,.14)",
         backdropFilter: "blur(8px)",
-        width: "35%",
-        mx: "32%",
+        width: {xl:'35%', lg:'40%',md:'54%',sm:'35%' },
+        mx: {md:'22%',lg:'28%', sm:'32%', xl:'32%'},
         my: 4,
-        border:'1px solid rgba(255,255,255,.2)'
+        border: "1px solid rgba(255,255,255,.2)",
       }}
     >
       <Container
@@ -50,7 +50,7 @@ function Navbar() {
         sx={{ display: "flex", justifyContent: "center" }}
       >
         <Toolbar disableGutters>
-          <Link to={"/"} style={{textDecoration:'none'}}>
+          <Link to={"/"} style={{ textDecoration: "none" }}>
             <Typography
               variant="h6"
               noWrap
@@ -98,14 +98,33 @@ function Navbar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to={'/'}>
+                  <Typography textAlign="center">Home</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to={'/services'}>
+                  <Typography textAlign="center">Services</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to={'/about'}>
+                  <Typography textAlign="center">About</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to={'/contact'}>
+                  <Typography textAlign="center">Contact</Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link to={'/work'}>
+                  <Typography textAlign="center">Work</Typography>
+                </Link>
+              </MenuItem>
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
