@@ -10,30 +10,32 @@ import { createTheme } from "@mui/material";
 import font from "../src/fonts/Satoshi-Regular.ttf";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// const theme = createTheme({
-//   components: {
-//     MuiTypography: {
-//       styleOverrides: `
-//       @font-face{
-//         font-family: 'Satoshi';
-//         font-style: normal;
-//         src: local('Satoshi'), local('satoshi-Regular'), url(${font}) format('truetype');
+const theme = createTheme({
+  components: {
+    MuiTypography: {
+      styleOverrides: `
+      @font-face{
+        font-family: 'Satoshi';
+        font-style: normal;
+        src: local('Satoshi'), local('satoshi-Regular'), url(${font}) format('truetype');
 
-//       }
-//       `,
-//     },
+      }
+      `,
+    },
 
-//   },
+  },
 
-//   typography: {
-//     fontFamily: ["Satoshi"],
-//   },
-// });
+  typography: {
+    fontFamily: ["Satoshi"],
+  },
+});
 
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ThemeProvider theme={theme}>
+      <App /> 
+      </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
