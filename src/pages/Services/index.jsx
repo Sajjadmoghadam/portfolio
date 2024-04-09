@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack, Box, Typography, Button, Divider } from "@mui/material";
 import SouthIcon from "@mui/icons-material/South";
-import CallMadeIcon from '@mui/icons-material/CallMade';
+import CallMadeIcon from "@mui/icons-material/CallMade";
 export default function Services() {
   return (
     <>
@@ -11,7 +11,7 @@ export default function Services() {
           height: "100%",
           backgroundColor: "#000000",
           flexDirection: "column",
-          pt:'200px'
+          pt: "200px",
         }}
       >
         <Stack
@@ -106,22 +106,20 @@ export default function Services() {
               >
                 <Typography
                   color="#DAC5A7"
-                  textAlign="start"
-                  width="250px"
-                  height="21px"
+                  textAlign="center"
+                  width="20%"
+                  // height="21px"
                 >
                   Concept
                 </Typography>
                 <Typography
                   color="#DAC5A799"
-                  textAlign="start"
-                  width="814px"
-                  height="58px"
+                  textAlign="center"
+                  width="80%"
+                  // height="58px"
                 >
                   I take time to understand your business needs and audience to
-                  develop a unique concept for your website. I'll create
-                  wireframes that serve as the foundation for your site's design
-                  and functionality.
+                  develop a unique concept for your website.
                 </Typography>
               </Box>
               <Divider
@@ -140,21 +138,20 @@ export default function Services() {
               >
                 <Typography
                   color="#DAC5A7"
-                  textAlign="start"
-                  width="250px"
-                  height="21px"
+                  textAlign="center"
+                  width="20%"
+                  // height="21px"
                 >
                   CMS Integration
                 </Typography>
                 <Typography
                   color="#DAC5A799"
-                  textAlign="start"
-                  width="814px"
-                  height="58px"
+                  textAlign="center"
+                  width="80%"
+                  // height="58px"
                 >
                   I can help you streamline your content management process by
-                  integrating a CMS into your website. Say goodbye to manual
-                  updates and hello to efficiency.
+                  integrating a CMS into your website.
                 </Typography>
               </Box>
               <Divider
@@ -173,21 +170,20 @@ export default function Services() {
               >
                 <Typography
                   color="#DAC5A7"
-                  textAlign="start"
-                  width="250px"
-                  height="21px"
+                  textAlign="center"
+                  width="20%"
+                  // height="21px"
                 >
-                  WEb Design System
+                  WEB Design System
                 </Typography>
                 <Typography
                   color="#DAC5A799"
-                  textAlign="start"
-                  width="814px"
-                  height="58px"
+                  textAlign="center"
+                  width="80%"
+                  // height="58px"
                 >
                   I use a modular design approach to create a web design system
-                  that ensures consistency throughout your website. This results
-                  in a professional and cohesive online presence.
+                  that ensures consistency throughout your website.
                 </Typography>
               </Box>
             </Box>
@@ -241,21 +237,20 @@ export default function Services() {
               >
                 <Typography
                   color="#DAC5A7"
-                  textAlign="start"
-                  width="250px"
-                  height="21px"
+                  textAlign="center"
+                  width="20%"
+                  // height="21px"
                 >
-                  Framer
+                  Concept
                 </Typography>
                 <Typography
                   color="#DAC5A799"
-                  textAlign="start"
-                  width="814px"
-                  height="58px"
+                  textAlign="center"
+                  width="80%"
+                  // height="58px"
                 >
-                  I specialize in developing web applications using Framer. From
-                  custom animations to complex interactions, I bring your web
-                  app to life.
+                  I take time to understand your business needs and audience to
+                  develop a unique concept for your website.
                 </Typography>
               </Box>
               <Divider
@@ -274,21 +269,20 @@ export default function Services() {
               >
                 <Typography
                   color="#DAC5A7"
-                  textAlign="start"
-                  width="250px"
-                  height="21px"
+                  textAlign="center"
+                  width="20%"
+                  // height="21px"
                 >
                   CMS Integration
                 </Typography>
                 <Typography
                   color="#DAC5A799"
-                  textAlign="start"
-                  width="814px"
-                  height="58px"
+                  textAlign="center"
+                  width="80%"
+                  // height="58px"
                 >
                   I can help you streamline your content management process by
-                  integrating a CMS into your website. Say goodbye to manual
-                  updates and hello to efficiency.
+                  integrating a CMS into your website.
                 </Typography>
               </Box>
               <Divider
@@ -307,21 +301,20 @@ export default function Services() {
               >
                 <Typography
                   color="#DAC5A7"
-                  textAlign="start"
-                  width="250px"
-                  height="21px"
+                  textAlign="center"
+                  width="20%"
+                  // height="21px"
                 >
-                  WEb Design System
+                  WEB Design System
                 </Typography>
                 <Typography
                   color="#DAC5A799"
-                  textAlign="start"
-                  width="814px"
-                  height="58px"
+                  textAlign="center"
+                  width="80%"
+                  // height="58px"
                 >
                   I use a modular design approach to create a web design system
-                  that ensures consistency throughout your website. This results
-                  in a professional and cohesive online presence.
+                  that ensures consistency throughout your website.
                 </Typography>
               </Box>
             </Box>
@@ -375,20 +368,20 @@ export default function Services() {
               >
                 <Typography
                   color="#DAC5A7"
-                  textAlign="start"
-                  width="250px"
-                  height="21px"
+                  textAlign="center"
+                  width="20%"
+                  // height="21px"
                 >
-                  Research
+                  Concept
                 </Typography>
                 <Typography
                   color="#DAC5A799"
-                  textAlign="start"
-                  width="814px"
-                  height="58px"
+                  textAlign="center"
+                  width="80%"
+                  // height="58px"
                 >
-                  I conduct thorough research to identify the best keywords and
-                  strategies to improve your website's search engine ranking.
+                  I take time to understand your business needs and audience to
+                  develop a unique concept for your website.
                 </Typography>
               </Box>
               <Divider
@@ -407,21 +400,20 @@ export default function Services() {
               >
                 <Typography
                   color="#DAC5A7"
-                  textAlign="start"
-                  width="250px"
-                  height="21px"
+                  textAlign="center"
+                  width="20%"
+                  // height="21px"
                 >
-                  SEo Ranking
+                  CMS Integration
                 </Typography>
                 <Typography
                   color="#DAC5A799"
-                  textAlign="start"
-                  width="814px"
-                  height="58px"
+                  textAlign="center"
+                  width="80%"
+                  // height="58px"
                 >
-                  My SEO services are designed to improve your website's
-                  visibility on search engines, increasing your organic traffic
-                  and driving more leads and sales.
+                  I can help you streamline your content management process by
+                  integrating a CMS into your website.
                 </Typography>
               </Box>
               <Divider
@@ -440,21 +432,20 @@ export default function Services() {
               >
                 <Typography
                   color="#DAC5A7"
-                  textAlign="start"
-                  width="250px"
-                  height="21px"
+                  textAlign="center"
+                  width="20%"
+                  // height="21px"
                 >
-                  SEO Support
+                  WEB Design System
                 </Typography>
                 <Typography
                   color="#DAC5A799"
-                  textAlign="start"
-                  width="814px"
-                  height="58px"
+                  textAlign="center"
+                  width="80%"
+                  // height="58px"
                 >
-                  With ongoing SEO support, I ensure that your website stays
-                  up-to-date with the latest SEO best practices, keeping you
-                  ahead of the competition.
+                  I use a modular design approach to create a web design system
+                  that ensures consistency throughout your website.
                 </Typography>
               </Box>
             </Box>
@@ -473,8 +464,8 @@ export default function Services() {
             textAlign: "center",
           }}
         >
-          <Box my={20} padding='20px'>
-            <Typography color="#DAC5A7" variant="body1" >
+          <Box my={20} padding="20px">
+            <Typography color="#DAC5A7" variant="body1">
               Project in mind?
             </Typography>
             <Typography color="#DAC5A7" variant="h2">
@@ -488,12 +479,17 @@ export default function Services() {
               business stand out.
             </Typography>
             <Button
-              sx={{ backgroundColor:'#DAC5A7', fontSize: "13px", marginTop: "30px" , padding:'10px',color:'#0E0E0E'}}
+              sx={{
+                backgroundColor: "#DAC5A7",
+                fontSize: "13px",
+                marginTop: "30px",
+                padding: "10px",
+                color: "#0E0E0E",
+              }}
               endIcon={
                 <CallMadeIcon
                   fontSize="small"
                   sx={{
-                    
                     border: "1px solid #DAC5A726",
                     padding: "5px",
                   }}

@@ -11,11 +11,11 @@ export default function About() {
       <Stack
         sx={{
           width: "100%",
-          height: "2100px",
+          // height: "2100px",
           backgroundColor: "#000000	",
           flexDirection: "column",
           overflow: "hidden",
-          pt:'200px'
+          pt: "200px",
         }}
       >
         <Stack
@@ -23,15 +23,44 @@ export default function About() {
           sx={{
             flexDirection: "row",
             padding: "50px",
-            alignContent: "center",
-            alignItems: "center",
-            justifyContent: "space-around",
+            justifyContent:'space-between',
           }}
         >
-          <Box sx={{ width: "30%", height: "590px", position:'fixed', top:100, left:0 }}>
-            <img width="100%" height="60%" src="assets/aboutimg1.jfif" alt="img" />
+          <Box
+            sx={{
+              width: { xl: "30%", lg: "30%", md: "0", sm: "0", xs: "0" },
+              height: "590px",
+              position: "sticky",
+              top: 100,
+              left: 0,
+              display: {
+                xl: "block",
+                lg: "block",
+                md: "none",
+                sm: "none",
+                xs: "none",
+              },
+            }}
+          >
+            <img
+              width="100%"
+              height="60%"
+              src="assets/aboutimg1.jfif"
+              alt="img"
+            />
           </Box>
-          <Box sx={{ width: "60%", height: "350px" }}>
+          <Box
+            sx={{
+              width: {
+                xl: "60%",
+                lg: "60%",
+                md: "100%",
+                sm: "100%",
+                xs: "100%",
+              },
+              // height: "350px",
+            }}
+          >
             <Typography variant="h3" color="#DAC5A7">
               Amirreza Mirshafiee
             </Typography>
@@ -58,8 +87,8 @@ export default function About() {
             <Stack
               mt={25}
               sx={{
-                height: "750px",
-                width: "700px",
+                // height: "750px",
+                width: "85%",
                 backgroundColor: "#DAC5A726",
                 padding: "50px ",
               }}
@@ -91,7 +120,7 @@ export default function About() {
                     am confident in my ability to deliver exceptional results
                     that exceed my clients' expectations.ّ
                   </Typography>
-                  <Box mt={3} sx={{ width: "704px", height: "417px" }}>
+                  <Box mt={3} sx={{ width: "100%" }}>
                     <img
                       width="100%"
                       height="100%"
@@ -169,7 +198,7 @@ export default function About() {
                   sx={{
                     display: "flex",
                     justifyContent: "space-between",
-                    margin:'20px 0'
+                    margin: "20px 0",
                   }}
                 >
                   <Typography
@@ -183,14 +212,13 @@ export default function About() {
                 <Divider
                   sx={{
                     borderColor: "#DAC5A726",
-                    
                   }}
                 />
                 <Box
                   sx={{
                     display: "flex",
                     justifyContent: "space-between",
-                    margin:'20px 0'
+                    margin: "20px 0",
                   }}
                 >
                   <Typography
@@ -204,74 +232,13 @@ export default function About() {
                 <Divider
                   sx={{
                     borderColor: "#DAC5A726",
-                    
                   }}
-                />                <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  margin:'20px 0'
-                }}
-              >
-                <Typography
-                  variant="h5"
-                  sx={{ color: "#DAC5A7", fontSize: "20px" }}
-                >
-                  Awwwards SOTD
-                </Typography>
-                <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
-              </Box>
-              <Divider
-                sx={{
-                  borderColor: "#DAC5A726",
-                  
-                }}
-              />                <Box
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                margin:'20px 0'
-              }}
-            >
-              <Typography
-                variant="h5"
-                sx={{ color: "#DAC5A7", fontSize: "20px" }}
-              >
-                Awwwards SOTD
-              </Typography>
-              <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
-            </Box>
-            <Divider
-              sx={{
-                borderColor: "#DAC5A726",
-                
-              }}
-            />                <Box
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              margin:'20px 0'
-            }}
-          >
-            <Typography
-              variant="h5"
-              sx={{ color: "#DAC5A7", fontSize: "20px" }}
-            >
-              Awwwards SOTD
-            </Typography>
-            <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
-          </Box>
-          <Divider
-            sx={{
-              borderColor: "#DAC5A726",
-              
-            }}
-          />
-                          <Box
+                />{" "}
+                <Box
                   sx={{
                     display: "flex",
                     justifyContent: "space-between",
-                    margin:'20px 0'
+                    margin: "20px 0",
                   }}
                 >
                   <Typography
@@ -285,7 +252,66 @@ export default function About() {
                 <Divider
                   sx={{
                     borderColor: "#DAC5A726",
-                    
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Awwwards SOTD
+                  </Typography>
+                  <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Awwwards SOTD
+                  </Typography>
+                  <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Awwwards SOTD
+                  </Typography>
+                  <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
                   }}
                 />
               </Box>
