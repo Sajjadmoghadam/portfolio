@@ -11,7 +11,7 @@ export default function About() {
       <Stack
         sx={{
           width: "100%",
-          height: "2769px",
+          height: "2100px",
           backgroundColor: "#000000	",
           flexDirection: "column",
           overflow: "hidden",
@@ -31,7 +31,7 @@ export default function About() {
           <Box sx={{ width: "30%", height: "590px", position:'fixed', top:100, left:0 }}>
             <img width="100%" height="60%" src="assets/aboutimg1.jfif" alt="img" />
           </Box>
-          <Box sx={{ width: "70%", height: "350px" }}>
+          <Box sx={{ width: "60%", height: "350px" }}>
             <Typography variant="h3" color="#DAC5A7">
               Amirreza Mirshafiee
             </Typography>
