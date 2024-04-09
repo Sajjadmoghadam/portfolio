@@ -4,11 +4,33 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import '../src/fonts/Satoshi-Regular.ttf'
+import { ThemeProvider } from "@emotion/react";
+import {createTheme} from '@mui/material'
+
+
+                
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const theme = createTheme({
+  components: {
+    MuiTypography: {
+      defaultProps: {
+        fontFamily:[
+          "Satoshi"
+        ]
+      },
+    },
+  },
+});
+
+  
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
       <App />
     </BrowserRouter>
   </React.StrictMode>

@@ -1,13 +1,14 @@
 import React from 'react'
-import Home from './pages/Home'
+import Home from './Pages/Home'
 import { Route, Routes } from 'react-router-dom'
-import About from './pages/About'
-import Work from './pages/Work'
-import Contact from './pages/Contact'
-import Services from './pages/Services'
-import Navbar from './components/Navbar'
+import About from './Pages/About'
+import Work from './Pages/Work'
+import Contact from './Pages/Contact'
+import Services from './Pages/Services'
+import Navbar from './Components/Navbar'
 
 export default function App() {
+  
   return (
     <>
       <Navbar/>
