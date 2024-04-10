@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar'
 import Contact from './Pages/Contact'
 import Services from './Pages/Services'
 import About from './Pages/About'
+import Footer from './Components/Footer'
 
 export default function App() {
   
@@ -20,6 +21,7 @@ export default function App() {
         <Route path='/work' element={<Work />}/>
         <Route path='/contact' element={<Contact />}/>
       </Routes>
+      <Footer/>
     </>
   )
 }
