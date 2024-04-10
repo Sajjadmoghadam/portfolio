@@ -451,55 +451,6 @@ export default function Services() {
             </Box>
           </Stack>
         </Stack>
-        <Stack
-          mt={3}
-          sx={{
-            backgroundColor: "#DAC5A70D",
-            width: "100%",
-            height: "70%",
-            alignContent: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            mx: "auto",
-            textAlign: "center",
-          }}
-        >
-          <Box my={20} padding="20px">
-            <Typography color="#DAC5A7" variant="body1">
-              Project in mind?
-            </Typography>
-            <Typography color="#DAC5A7" variant="h2">
-              Let’s make your
-            </Typography>
-            <Typography color="#DAC5A7" variant="h3" fontStyle="italic">
-              Website shine
-            </Typography>
-            <Typography color="#DAC5A799" variant="body1" fontSize="13">
-              Premium web design, webflow, and SEO services to help your
-              business stand out.
-            </Typography>
-            <Button
-              sx={{
-                backgroundColor: "#DAC5A7",
-                fontSize: "13px",
-                marginTop: "30px",
-                padding: "10px",
-                color: "#0E0E0E",
-              }}
-              endIcon={
-                <CallMadeIcon
-                  fontSize="small"
-                  sx={{
-                    border: "1px solid #DAC5A726",
-                    padding: "5px",
-                  }}
-                />
-              }
-            >
-              My Services
-            </Button>
-          </Box>
-        </Stack>
       </Stack>
     </>
   );
