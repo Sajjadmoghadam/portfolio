@@ -75,13 +75,16 @@ export default function Contact() {
             alignItems: "center",
             justifyContent: "center",
             marginTop: "12%",
+            pb:10,
+            width:'100%',
           }}
         >
           <Box
             sx={{
-              width: "600px",
+              width: "40%",
               height: "600px",
               alignItems: "center",
+              display:{xs:'none',sm:'none',md:'block'}
             }}
           >
             <img
@@ -95,8 +98,7 @@ export default function Contact() {
             <Box
               sx={{
                 backgroundColor: "#DAC5A726",
-                width: "600px",
-                height: "500px",
+                width: {lg:'600px',md:'550px',sm:'550px',xs:'100%'},
                 display: "flex",
                 flexDirection: "column",
                 padding: "30px 50px",

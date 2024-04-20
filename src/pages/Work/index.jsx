@@ -6,11 +6,12 @@ export default function Work() {
       <Stack
         sx={{
           width: "100%",
-          height: "2100px",
+          // height: "2100px",
           backgroundColor: "#000000	",
           flexDirection: "column",
           overflow: "hidden",
           pt: "150px",
+          pb:10
         }}
       >
         <Stack
@@ -24,7 +25,7 @@ export default function Work() {
           <Typography variant="h2" color="#DAC5A7">
             Work
           </Typography>
-          <Typography variant="body2" color="#DAC5A799">
+          <Typography variant="body2" color="#DAC5A799" sx={{textAlign:'center'}}>
             My latest web design projects and see how we can help bring your
             ideas to life.
           </Typography>

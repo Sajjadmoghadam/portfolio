@@ -25,6 +25,7 @@ export default function Home() {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
+          pb:10
         }}
       >
         <Box

@@ -8,14 +8,14 @@ import ListItemText from "@mui/material/ListItemText";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListSubheader from "@mui/material/ListSubheader";
-import GitHubIcon from '@mui/icons-material/GitHub';
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function Footer() {
   return (
     <>
       <Stack
         flexDirection="column"
-        mt={3}
+        // mt={3}
         sx={{
           backgroundColor: "#171616",
           width: "100%",
@@ -28,7 +28,7 @@ export default function Footer() {
         }}
       >
         <Stack>
-          <Box my={20} padding="20px">
+          <Box mt={20} mb={5} padding="20px">
             <Typography color="#DAC5A7" variant="body1">
               Project in mind?
             </Typography>
@@ -67,209 +67,24 @@ export default function Footer() {
             </Button>
           </Box>
         </Stack>
-        <Stack
-          flexDirection="row"
-          width="80%"
-          mx="auto"
-          gap="80px"
-          
-        >
+        <Stack width="100%"  >
           <List
-            sx={{ width: "100%", maxWidth: 360, backgroundColor: "#171616" }}
-            subheader={
-              <ListSubheader
-                sx={{
-                  textAlign: "start",
-                  backgroundColor: "#171616",
-                  color: "#DAC5A7",
-                  fontSize: "22px",
-                }}
-              >
-                Nested List Items
-              </ListSubheader>
-            }
+            sx={{
+              width: "100%",
+              backgroundColor: "#171616",
+              display: "flex",
+              alignItems: "center",
+              flexDirection:{md:'row',sm:'row', xs:'column'},
+              gap:1,
+              justifyContent:'center'
+            }}
           >
-            <ListItemButton>
-              <ListItemIcon>
-                <InstagramIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="Instagram" />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemIcon>
-                <LinkedInIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="LinkedIn" />
-            </ListItemButton>{" "}
-            <ListItemButton>
-              <ListItemIcon>
-                <GitHubIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="GitHubIcon" />
-            </ListItemButton>
-          </List>
-          <List
-            sx={{ width: "100%", maxWidth: 360, backgroundColor: "#171616" }}
-            subheader={
-              <ListSubheader
-                sx={{
-                  textAlign: "start",
-                  backgroundColor: "#171616",
-                  color: "#DAC5A7",
-                  fontSize: "22px",
-                }}
-              >
-                Nested List Items
-              </ListSubheader>
-            }
-          >
-            <ListItemButton>
-              <ListItemIcon>
-                <InstagramIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="Instagram" />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemIcon>
-                <LinkedInIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="LinkedIn" />
-            </ListItemButton>{" "}
-            <ListItemButton>
-              <ListItemIcon>
-                <GitHubIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="GitHubIcon" />
-            </ListItemButton>
-          </List>          <List
-            sx={{ width: "100%", maxWidth: 360, backgroundColor: "#171616" }}
-            subheader={
-              <ListSubheader
-                sx={{
-                  textAlign: "start",
-                  backgroundColor: "#171616",
-                  color: "#DAC5A7",
-                  fontSize: "22px",
-                }}
-              >
-                Nested List Items
-              </ListSubheader>
-            }
-          >
-            <ListItemButton>
-              <ListItemIcon>
-                <InstagramIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="Instagram" />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemIcon>
-                <LinkedInIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="LinkedIn" />
-            </ListItemButton>{" "}
-            <ListItemButton>
-              <ListItemIcon>
-                <GitHubIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="GitHubIcon" />
-            </ListItemButton>
-          </List>          <List
-            sx={{ width: "100%", maxWidth: 360, backgroundColor: "#171616" }}
-            subheader={
-              <ListSubheader
-                sx={{
-                  textAlign: "start",
-                  backgroundColor: "#171616",
-                  color: "#DAC5A7",
-                  fontSize: "22px",
-                }}
-              >
-                Nested List Items
-              </ListSubheader>
-            }
-          >
+            <ListItemText
+              primary=" Social Communities : "
+              sx={{
+                color: "#DAC5A7",
+              }}
+            />
             <ListItemButton>
               <ListItemIcon>
                 <InstagramIcon

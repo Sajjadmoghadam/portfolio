@@ -1,4 +1,4 @@
-import { Box, Button, Stack, Typography, Divider } from "@mui/material";
+import { Box, Button, Stack, Typography, Divider, Rating } from "@mui/material";
 import React from "react";
 import SouthIcon from "@mui/icons-material/South";
 import CallMadeIcon from "@mui/icons-material/CallMade";
@@ -16,17 +16,18 @@ export default function About() {
           flexDirection: "column",
           overflow: "hidden",
           pt: "200px",
+          pb: 10,
         }}
       >
         <Stack
-          mx="auto"
+          // mx="auto"
           sx={{
             flexDirection: "row",
             padding: "50px",
-            justifyContent:'space-between',
+            justifyContent: "center",
           }}
         >
-          <Box
+          {/* <Box
             sx={{
               width: { xl: "30%", lg: "30%", md: "0", sm: "0", xs: "0" },
               height: "590px",
@@ -48,15 +49,15 @@ export default function About() {
               src="assets/aboutimg1.jfif"
               alt="img"
             />
-          </Box>
+          </Box> */}
           <Box
             sx={{
               width: {
                 xl: "60%",
                 lg: "60%",
-                md: "100%",
-                sm: "100%",
-                xs: "100%",
+                md: "90%",
+                sm: "90%",
+                xs: "90%",
               },
               // height: "350px",
             }}
@@ -88,7 +89,7 @@ export default function About() {
               mt={25}
               sx={{
                 // height: "750px",
-                width: "90%",
+                width: "100%",
                 backgroundColor: "#DAC5A726",
                 padding: "50px ",
               }}
@@ -130,11 +131,11 @@ export default function About() {
                 </Box>
               </Stack>
             </Stack>
-            <Stack mt={5} gap="30px" flexDirection="row" sx={{width:'90%'}}>
+            <Stack mt={5} gap="30px" sx={{ width: "100%", flexDirection:{xs:'column', sm:'row'} }}>
               <Box
                 sx={{
                   backgroundColor: "#DAC5A726",
-                  width: "33%",
+                  width: {xs:"100%",sm:"33%"},
                   height: "56px",
                   alignItems: "center",
                   display: "flex",
@@ -150,7 +151,7 @@ export default function About() {
               <Box
                 sx={{
                   backgroundColor: "#DAC5A726",
-                  width: "33%",
+                  width: {xs:"100%",sm:"33%"},
                   height: "56px",
                   alignItems: "center",
                   display: "flex",
@@ -166,7 +167,7 @@ export default function About() {
               <Box
                 sx={{
                   backgroundColor: "#DAC5A726",
-                  width: "33%",
+                  width: {xs:"100%",sm:"33%"},
                   height: "56px",
                   alignItems: "center",
                   display: "flex",
@@ -183,8 +184,7 @@ export default function About() {
             <Stack
               mt={5}
               sx={{
-                height: "500px",
-                width: "90%",
+                width: "100%",
                 backgroundColor: "#DAC5A726",
                 padding: "50px ",
                 flexDirection: "column",
@@ -254,6 +254,21 @@ export default function About() {
                     borderColor: "#DAC5A726",
                   }}
                 />{" "}
+              </Box>
+            </Stack>
+            <Stack
+              mt={5}
+              sx={{
+                width: "100%",
+                backgroundColor: "#DAC5A726",
+                padding: "50px ",
+                flexDirection: "column",
+              }}
+            >
+              <Typography color="#DAC5A799" fontSize="13px">
+                Skills
+              </Typography>
+              <Box mt={3} sx={{ display: "flex", flexDirection: "column" }}>
                 <Box
                   sx={{
                     display: "flex",
@@ -265,9 +280,29 @@ export default function About() {
                     variant="h5"
                     sx={{ color: "#DAC5A7", fontSize: "20px" }}
                   >
-                    Awwwards SOTD
+                    REACT JS
                   </Typography>
-                  <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    REACT JS
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
                 </Box>
                 <Divider
                   sx={{
@@ -285,35 +320,15 @@ export default function About() {
                     variant="h5"
                     sx={{ color: "#DAC5A7", fontSize: "20px" }}
                   >
-                    Awwwards SOTD
+                    REACT JS
                   </Typography>
-                  <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
+                  <Rating value={4.5} precision={0.5} />
                 </Box>
                 <Divider
                   sx={{
                     borderColor: "#DAC5A726",
                   }}
-                />
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    margin: "20px 0",
-                  }}
-                >
-                  <Typography
-                    variant="h5"
-                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
-                  >
-                    Awwwards SOTD
-                  </Typography>
-                  <Typography sx={{ color: "#DAC5A7" }}>2023</Typography>
-                </Box>
-                <Divider
-                  sx={{
-                    borderColor: "#DAC5A726",
-                  }}
-                />
+                />{" "}
               </Box>
             </Stack>
           </Box>

@@ -12,6 +12,7 @@ export default function Services() {
           backgroundColor: "#000000",
           flexDirection: "column",
           pt: "200px",
+          pb:10
         }}
       >
         <Stack
