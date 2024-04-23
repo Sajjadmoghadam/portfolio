@@ -2,11 +2,11 @@ import React from 'react'
 import Home from './pages/Home'
 import { Route, Routes } from 'react-router-dom'
 import Work from './pages/Work'
-import Navbar from './components/Navbar'
+import Navbar from './Components/Navbar'
 import Contact from './pages/Contact'
 import Services from './pages/Services'
 import About from './pages/About'
-import Footer from './components/Footer'
+import Footer from './Components/Footer'
 
 export default function App() {
   

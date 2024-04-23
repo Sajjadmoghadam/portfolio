@@ -28,10 +28,10 @@ export default function Services() {
         >
           <Box>
             <Typography variant="h3" sx={{ color: "#DAC5A7",  }}>
-              Full Stack
+            Full Stack Developer
             </Typography>
             <Typography variant="h2" sx={{ color: "#DAC5A7" }}>
-              Mern
+            Mern Stack
             </Typography>
             <Typography variant="body1" sx={{ color: "#DAC5A799" }}>
               Premium web design, development, and SEO services to help your

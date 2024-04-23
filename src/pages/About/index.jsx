@@ -86,7 +86,7 @@ export default function About() {
               My Services
             </Button>
             <Stack
-              mt={25}
+              mt={15}
               sx={{
                 // height: "750px",
                 width: "100%",
@@ -131,11 +131,15 @@ export default function About() {
                 </Box>
               </Stack>
             </Stack>
-            <Stack mt={5} gap="30px" sx={{ width: "100%", flexDirection:{xs:'column', sm:'row'} }}>
+            <Stack
+              mt={5}
+              gap="30px"
+              sx={{ width: "100%", flexDirection: { xs: "column", sm: "row" } }}
+            >
               <Box
                 sx={{
                   backgroundColor: "#DAC5A726",
-                  width: {xs:"100%",sm:"33%"},
+                  width: { xs: "100%", sm: "33%" },
                   height: "56px",
                   alignItems: "center",
                   display: "flex",
@@ -151,7 +155,7 @@ export default function About() {
               <Box
                 sx={{
                   backgroundColor: "#DAC5A726",
-                  width: {xs:"100%",sm:"33%"},
+                  width: { xs: "100%", sm: "33%" },
                   height: "56px",
                   alignItems: "center",
                   display: "flex",
@@ -167,7 +171,7 @@ export default function About() {
               <Box
                 sx={{
                   backgroundColor: "#DAC5A726",
-                  width: {xs:"100%",sm:"33%"},
+                  width: { xs: "100%", sm: "33%" },
                   height: "56px",
                   alignItems: "center",
                   display: "flex",
@@ -280,7 +284,7 @@ export default function About() {
                     variant="h5"
                     sx={{ color: "#DAC5A7", fontSize: "20px" }}
                   >
-                    REACT JS
+                    React JS
                   </Typography>
                   <Rating value={4.5} precision={0.5} />
                 </Box>
@@ -300,7 +304,7 @@ export default function About() {
                     variant="h5"
                     sx={{ color: "#DAC5A7", fontSize: "20px" }}
                   >
-                    REACT JS
+                    Node JS
                   </Typography>
                   <Rating value={4.5} precision={0.5} />
                 </Box>
@@ -320,7 +324,107 @@ export default function About() {
                     variant="h5"
                     sx={{ color: "#DAC5A7", fontSize: "20px" }}
                   >
-                    REACT JS
+                    Express
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Square
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Next JS
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Redux
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Java Script
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Material UI
                   </Typography>
                   <Rating value={4.5} precision={0.5} />
                 </Box>
@@ -329,6 +433,226 @@ export default function About() {
                     borderColor: "#DAC5A726",
                   }}
                 />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Ant Design
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Testing React
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Bootstrap
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Html
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    MongoDB
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Formik
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Yup
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Swiper
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    GSAP
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Chart JS
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />{" "}
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    margin: "20px 0",
+                  }}
+                >
+                  <Typography
+                    variant="h5"
+                    sx={{ color: "#DAC5A7", fontSize: "20px" }}
+                  >
+                    Redux
+                  </Typography>
+                  <Rating value={4.5} precision={0.5} />
+                </Box>
+                <Divider
+                  sx={{
+                    borderColor: "#DAC5A726",
+                  }}
+                />
               </Box>
             </Stack>
           </Box>
