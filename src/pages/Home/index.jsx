@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Divider from "@mui/material/Divider";
 import { styled } from "@mui/material/styles";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Root = styled("div")(({ theme }) => ({
   width: "100%",
@@ -16,19 +18,27 @@ const Root = styled("div")(({ theme }) => ({
 }));
 
 export default function Home() {
+  const homePage = useRef();
+  useGSAP(
+    () => {
+      gsap.from(".hp", { opacity: 1, y: -100, duration: 1, });
+    },
+  );
   return (
     <>
       <Box
+      ref={homePage}
         sx={{
           backgroundColor: "#000",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          pb:10
+          pb: 10,
         }}
       >
         <Box
+          className="hp"
           sx={{
             backgroundImage: "url(assets/homepagePhoto.png)",
             width: "100%",
@@ -1353,7 +1363,7 @@ export default function Home() {
             }}
             justifyContent={"center"}
             alignItems={"center"}
-            textAlign={'center'}
+            textAlign={"center"}
             sx={{ gap: "90px", ml: { xl: 20, lg: 20, md: 15, xs: 0, sm: 0 } }}
           >
             <Typography
