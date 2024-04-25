@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <>
       <Box
-      ref={homePage}
+      // ref={homePage}
         sx={{
           backgroundColor: "#000",
           display: "flex",
@@ -38,7 +38,6 @@ export default function Home() {
         }}
       >
         <Box
-          className="hp"
           sx={{
             backgroundImage: "url(assets/homepagePhoto.png)",
             width: "100%",
@@ -294,6 +293,8 @@ export default function Home() {
             }}
           >
             <img
+          className="hp"
+
               src="assets/HomepageIMG1.png"
               alt="img"
               style={{ width: "50%" }}
