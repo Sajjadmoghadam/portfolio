@@ -19,39 +19,96 @@ const Root = styled("div")(({ theme }) => ({
 }));
 
 export default function Home() {
-  const homePage = useRef();
+  // const homePage = useRef();
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
-    gsap.from(".text", {
-      scrollTrigger: {
-        trigger:".text",
-      },
-      y: -250,
-      scale:0.4,
-      duration: 1.2,
-    });
-    gsap.from(".img1", {
-      scrollTrigger: {
-        trigger:".img1",
-      },
-      x: -1500,
+    gsap.from(".home-header", {
+      y: 200,
       duration: 2,
-      delay:0.5
+      opacity: 0,
+      // delay:0.5
     });
-    gsap.from(".img2", {
+    gsap.from(".triple-boxes", {
       scrollTrigger: {
-        trigger:".img2",
+        trigger: ".triple-boxes",
+        start: "top 100%",
+        end: "bottom 60%",
+        scrub: true,
       },
-      x: 1500,
-      duration: 2,
-      delay:0.25
-
+      y: 300,
+      duration: 1,
+      opacity: 0.7,
+    });
+    gsap.from(".img-box", {
+      scrollTrigger: {
+        trigger: ".img-box",
+        start: "top 100%",
+        end: "bottom 60%",
+        scrub: true,
+      },
+      y: 300,
+      duration: 1,
+    });
+    gsap.from(".step-box1", {
+      scrollTrigger: {
+        trigger: ".step-box1",
+        start: "top 100%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+      x: 500,
+      duration: 1.5,
+      opacity:0.2,
+    });
+    gsap.from(".step-box2", {
+      scrollTrigger: {
+        trigger: ".step-box2",
+        start: "top 100%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+      x: -500,
+      duration: 1.5,
+      opacity:0.2,
+    });
+    gsap.from(".step-box3", {
+      scrollTrigger: {
+        trigger: ".step-box3",
+        start: "top 100%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+      x: 500,
+      duration: 1.5,
+      opacity:0.2,
+    });
+    gsap.from(".step-box4", {
+      scrollTrigger: {
+        trigger: ".step-box4",
+        start: "top 100%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+      x: -500,
+      duration: 1.5,
+      opacity:0.2,
+    });
+    gsap.from(".step-box5", {
+      scrollTrigger: {
+        trigger: ".step-box5",
+        start: "top 100%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+      x: 500,
+      duration: 1.5,
+      opacity:0.2,
     });
   });
+
   return (
     <>
       <Box
-      // ref={homePage}
         sx={{
           backgroundColor: "#000",
           display: "flex",
@@ -74,6 +131,7 @@ export default function Home() {
             alignItems: "center",
             justifyContent: "end",
           }}
+          className="home-header"
         >
           <Typography
             sx={{
@@ -114,6 +172,7 @@ export default function Home() {
             mt: 7,
             flexDirection: { lg: "row", md: "row", sm: "column", xs: "column" },
           }}
+          className="triple-boxes"
         >
           <Box
             sx={{
@@ -266,13 +325,13 @@ export default function Home() {
           </Box>
         </Box>
         <Box
-        ref={homePage}
           sx={{
             width: "84%",
             mt: 7,
           }}
+          className="img-box"
         >
-          <Stack flexDirection={"row"} justifyContent={"space-between"} className="text">
+          <Stack flexDirection={"row"} justifyContent={"space-between"}>
             <Typography
               sx={{
                 color: "#DAC5A7",
@@ -318,14 +377,13 @@ export default function Home() {
             }}
           >
             <img
-          className="img1"
+              className="img1"
               src="assets/HomepageIMG1.png"
               alt="img"
               style={{ width: "50%" }}
             />
             <img
-          className="img2"
-
+              className="img2"
               src="assets/HomepageIMG2.png"
               alt="img"
               style={{ width: "50%" }}
@@ -415,6 +473,7 @@ export default function Home() {
                 width: "70%",
                 mt: "900px",
               }}
+              className="step-box2"
             >
               <Stack direction={"column"}>
                 <Box
@@ -500,6 +559,7 @@ export default function Home() {
                 width: "70%",
                 mt: "650px",
               }}
+              className="step-box4"
             >
               <Stack direction={"column"}>
                 <Box
@@ -664,7 +724,9 @@ export default function Home() {
               </Button>
             </Root>
           </Stack>
-          <Stack sx={{ width: "100%", alignItems: "center" }}>
+          <Stack
+            sx={{ width: "100%", alignItems: "center", overflow: "hidden" }}
+          >
             <Box
               sx={{
                 display: "flex",
@@ -678,6 +740,7 @@ export default function Home() {
                 width: "70%",
                 mt: "350px",
               }}
+              className="step-box1"
             >
               <Stack direction={"column"}>
                 <Box
@@ -762,6 +825,7 @@ export default function Home() {
                 width: "70%",
                 mt: "700px",
               }}
+              className="step-box3"
             >
               <Stack direction={"column"}>
                 <Box
@@ -840,6 +904,7 @@ export default function Home() {
                 width: "70%",
                 mt: "550px",
               }}
+              className="step-box5"
             >
               <Stack direction={"column"}>
                 <Box
@@ -929,6 +994,7 @@ export default function Home() {
             },
             justifyContent: "center",
             mt: 5,
+            overflow: "hidden",
           }}
         >
           <Stack sx={{ width: "100%", alignItems: "center", gap: 5, mt: 5 }}>
@@ -944,6 +1010,7 @@ export default function Home() {
                 p: 4,
                 width: "70%",
               }}
+              className="step-box1"
             >
               <Stack direction={"column"}>
                 <Box
@@ -1027,6 +1094,7 @@ export default function Home() {
                 p: 4,
                 width: "70%",
               }}
+              className="step-box2"
             >
               <Stack direction={"column"}>
                 <Box
@@ -1111,6 +1179,7 @@ export default function Home() {
                 p: 4,
                 width: "70%",
               }}
+              className="step-box3"
             >
               <Stack direction={"column"}>
                 <Box
@@ -1188,6 +1257,7 @@ export default function Home() {
                 p: 4,
                 width: "70%",
               }}
+              className="step-box4"
             >
               <Stack direction={"column"}>
                 <Box
@@ -1273,6 +1343,7 @@ export default function Home() {
                 p: 4,
                 width: "70%",
               }}
+              className="step-box5"
             >
               <Stack direction={"column"}>
                 <Box
