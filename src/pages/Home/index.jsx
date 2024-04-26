@@ -7,6 +7,7 @@ import Divider from "@mui/material/Divider";
 import { styled } from "@mui/material/styles";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Root = styled("div")(({ theme }) => ({
   width: "100%",
@@ -19,11 +20,34 @@ const Root = styled("div")(({ theme }) => ({
 
 export default function Home() {
   const homePage = useRef();
-  useGSAP(
-    () => {
-      gsap.from(".hp", { opacity: 1, y: -100, duration: 1, });
-    },
-  );
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(() => {
+    gsap.from(".text", {
+      scrollTrigger: {
+        trigger:".text",
+      },
+      y: -250,
+      scale:0.4,
+      duration: 1.2,
+    });
+    gsap.from(".img1", {
+      scrollTrigger: {
+        trigger:".img1",
+      },
+      x: -1500,
+      duration: 2,
+      delay:0.5
+    });
+    gsap.from(".img2", {
+      scrollTrigger: {
+        trigger:".img2",
+      },
+      x: 1500,
+      duration: 2,
+      delay:0.25
+
+    });
+  });
   return (
     <>
       <Box
@@ -242,12 +266,13 @@ export default function Home() {
           </Box>
         </Box>
         <Box
+        ref={homePage}
           sx={{
             width: "84%",
             mt: 7,
           }}
         >
-          <Stack flexDirection={"row"} justifyContent={"space-between"} sx={{}}>
+          <Stack flexDirection={"row"} justifyContent={"space-between"} className="text">
             <Typography
               sx={{
                 color: "#DAC5A7",
@@ -293,13 +318,14 @@ export default function Home() {
             }}
           >
             <img
-          className="hp"
-
+          className="img1"
               src="assets/HomepageIMG1.png"
               alt="img"
               style={{ width: "50%" }}
             />
             <img
+          className="img2"
+
               src="assets/HomepageIMG2.png"
               alt="img"
               style={{ width: "50%" }}
