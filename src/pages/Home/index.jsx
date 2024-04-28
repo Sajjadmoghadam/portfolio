@@ -58,7 +58,7 @@ export default function Home() {
       },
       x: 500,
       duration: 1.5,
-      opacity:0.2,
+      opacity: 0.2,
     });
     gsap.from(".step-box2", {
       scrollTrigger: {
@@ -69,7 +69,7 @@ export default function Home() {
       },
       x: -500,
       duration: 1.5,
-      opacity:0.2,
+      opacity: 0.2,
     });
     gsap.from(".step-box3", {
       scrollTrigger: {
@@ -80,7 +80,7 @@ export default function Home() {
       },
       x: 500,
       duration: 1.5,
-      opacity:0.2,
+      opacity: 0.2,
     });
     gsap.from(".step-box4", {
       scrollTrigger: {
@@ -91,7 +91,7 @@ export default function Home() {
       },
       x: -500,
       duration: 1.5,
-      opacity:0.2,
+      opacity: 0.2,
     });
     gsap.from(".step-box5", {
       scrollTrigger: {
@@ -102,7 +102,7 @@ export default function Home() {
       },
       x: 500,
       duration: 1.5,
-      opacity:0.2,
+      opacity: 0.2,
     });
   });
 
@@ -148,7 +148,7 @@ export default function Home() {
               }}
             >
               {" "}
-              Web Developer
+              Mern Developer
             </Typography>
           </Typography>
           <Typography
@@ -158,7 +158,7 @@ export default function Home() {
               fontSize: "18px",
             }}
           >
-            Premium web design development and SEO <br /> services in help your
+            Premium Front-End and Back-End development and SEO <br /> services in help your
             business stand out
           </Typography>
         </Box>
@@ -190,11 +190,12 @@ export default function Home() {
             <Stack direction={"column"}>
               <Typography sx={{ color: "#DAC5A7" }}>01</Typography>
               <Typography sx={{ color: "#DAC5A7", my: 1 }}>
-                WEB DESIGN
+                FRONT-END
               </Typography>
               <Typography sx={{ color: "#DAC5A7" }}>
-                Visually stunning web designs that <br /> captivate your
-                audience by blending your <br /> brand voice and customer needs.
+                Visually appealing websites, with a clean and<br />
+                modern design. Your website layout is responsive <br />
+                and adapts to different screen sizes and devices.<br />
               </Typography>
             </Stack>
             <Stack
@@ -220,7 +221,7 @@ export default function Home() {
               >
                 <ArrowOutwardIcon />
               </Button>{" "}
-              <Typography sx={{ color: "#DAC5A7" }}>ABOUT WEBDESIGN</Typography>
+              <Typography sx={{ color: "#DAC5A7" }}>ABOUT FRONT-END</Typography>
             </Stack>
           </Box>
           <Box
@@ -238,13 +239,11 @@ export default function Home() {
           >
             <Stack direction={"column"}>
               <Typography sx={{ color: "#DAC5A7" }}>02</Typography>
-              <Typography sx={{ color: "#DAC5A7", my: 1 }}>
-                DEVELOPMENT
-              </Typography>
+              <Typography sx={{ color: "#DAC5A7", my: 1 }}>BACK-END</Typography>
               <Typography sx={{ color: "#DAC5A7" }}>
-                Get custom web development solution that <br /> are tailored to
-                your specification, designed <br /> to deliver a flawless user
-                experience
+                Security measures are carefully implemented <br /> 
+                to protect sensitive information and prevent <br />
+                unauthorized access to your website. 
               </Typography>
             </Stack>
             <Stack
@@ -270,7 +269,7 @@ export default function Home() {
               >
                 <ArrowOutwardIcon />
               </Button>{" "}
-              <Typography sx={{ color: "#DAC5A7" }}>ABOUT WEBFLOW</Typography>
+              <Typography sx={{ color: "#DAC5A7" }}>ABOUT BACK-END</Typography>
             </Stack>
           </Box>
           <Box
@@ -488,17 +487,18 @@ export default function Home() {
                       color: "#DAC5A7",
                       borderRadius: "2px",
                       border: "1px solid #3d3932",
-                      width: "17%",
+                      width: "20%",
                       p: "5px",
                       alignItems: "center",
                       display: "flex",
                       justifyContent: "center",
+                      fontSize: { md: "9px", lg: "12px", xl: "13px" },
                     }}
                   >
                     1 WEEK
                   </Typography>
                 </Box>
-                <Typography sx={{ color: "#8c7f6d" }}>Lorem Ipsum</Typography>
+                <Typography sx={{ color: "#8c7f6d" }}>Guide Step</Typography>
                 <Typography
                   sx={{ color: "#DAC5A7", mt: 1, mb: 2, fontSize: "22px" }}
                 >
@@ -574,11 +574,12 @@ export default function Home() {
                       color: "#DAC5A7",
                       borderRadius: "2px",
                       border: "1px solid #3d3932",
-                      width: "17%",
+                      width: "20%",
                       p: "5px",
                       alignItems: "center",
                       display: "flex",
                       justifyContent: "center",
+                      fontSize: { md: "9px", lg: "12px", xl: "13px" },
                     }}
                   >
                     2 WEEK
@@ -755,11 +756,12 @@ export default function Home() {
                       color: "#DAC5A7",
                       borderRadius: "2px",
                       border: "1px solid #3d3932",
-                      width: "17%",
+                      width: "20%",
                       p: "5px",
                       alignItems: "center",
                       display: "flex",
                       justifyContent: "center",
+                      fontSize: { md: "9px", lg: "12px", xl: "13px" },
                     }}
                   >
                     2 HOURS
@@ -840,11 +842,12 @@ export default function Home() {
                       color: "#DAC5A7",
                       borderRadius: "2px",
                       border: "1px solid #3d3932",
-                      width: "17%",
+                      width: "20%",
                       p: "5px",
                       alignItems: "center",
                       display: "flex",
                       justifyContent: "center",
+                      fontSize: { md: "9px", lg: "12px", xl: "13px" },
                     }}
                   >
                     2 WEEK
@@ -919,11 +922,12 @@ export default function Home() {
                       color: "#DAC5A7",
                       borderRadius: "2px",
                       border: "1px solid #3d3932",
-                      width: "17%",
+                      width: "20%",
                       p: "5px",
                       alignItems: "center",
                       display: "flex",
                       justifyContent: "center",
+                      fontSize: { md: "9px", lg: "12px", xl: "13px" },
                     }}
                   >
                     2 HOURS
@@ -1025,11 +1029,12 @@ export default function Home() {
                       color: "#DAC5A7",
                       borderRadius: "2px",
                       border: "1px solid #3d3932",
-                      width: "17%",
+                      width: "20%",
                       p: "5px",
                       alignItems: "center",
                       display: "flex",
                       justifyContent: "center",
+                      fontSize: "9px",
                     }}
                   >
                     2 HOURS
@@ -1109,17 +1114,18 @@ export default function Home() {
                       color: "#DAC5A7",
                       borderRadius: "2px",
                       border: "1px solid #3d3932",
-                      width: "17%",
+                      width: "20%",
                       p: "5px",
                       alignItems: "center",
                       display: "flex",
                       justifyContent: "center",
+                      fontSize: "9px",
                     }}
                   >
                     1 WEEK
                   </Typography>
                 </Box>
-                <Typography sx={{ color: "#8c7f6d" }}>Lorem Ipsum</Typography>
+                <Typography sx={{ color: "#8c7f6d" }}>Guide Step</Typography>
                 <Typography
                   sx={{ color: "#DAC5A7", mt: 1, mb: 2, fontSize: "22px" }}
                 >
@@ -1194,11 +1200,12 @@ export default function Home() {
                       color: "#DAC5A7",
                       borderRadius: "2px",
                       border: "1px solid #3d3932",
-                      width: "17%",
+                      width: "20%",
                       p: "5px",
                       alignItems: "center",
                       display: "flex",
                       justifyContent: "center",
+                      fontSize: "9px",
                     }}
                   >
                     2 WEEK
@@ -1272,11 +1279,12 @@ export default function Home() {
                       color: "#DAC5A7",
                       borderRadius: "2px",
                       border: "1px solid #3d3932",
-                      width: "17%",
+                      width: "20%",
                       p: "5px",
                       alignItems: "center",
                       display: "flex",
                       justifyContent: "center",
+                      fontSize: "9px",
                     }}
                   >
                     2 WEEK
@@ -1358,11 +1366,12 @@ export default function Home() {
                       color: "#DAC5A7",
                       borderRadius: "2px",
                       border: "1px solid #3d3932",
-                      width: "17%",
+                      width: "20%",
                       p: "5px",
                       alignItems: "center",
                       display: "flex",
                       justifyContent: "center",
+                      fontSize: "9px",
                     }}
                   >
                     2 HOURS

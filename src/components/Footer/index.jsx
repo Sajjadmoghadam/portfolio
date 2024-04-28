@@ -39,7 +39,7 @@ export default function Footer() {
               Website shine
             </Typography>
             <Typography color="#DAC5A799" variant="body1" fontSize="13">
-              Premium web design, webflow, and SEO services to help your
+              Premium web development, and SEO services to help your
               business stand out.
             </Typography>
             <Button

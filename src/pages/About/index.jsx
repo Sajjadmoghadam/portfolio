@@ -20,7 +20,6 @@ export default function About() {
         }}
       >
         <Stack
-          // mx="auto"
           sx={{
             flexDirection: "row",
             padding: "50px",
@@ -66,8 +65,8 @@ export default function About() {
               Amirreza Mirshafiee
             </Typography>
             <Typography variant="body2" color="#DAC5A799">
-              Delivering Premium Web Design and Development Services to Boost
-              Your Online Presence.
+              Delivering Premium Front-End and Back-End Development Services to
+              Boost Your Online Presence.
             </Typography>
             <Button
               sx={{ color: "#DAC5A7", fontSize: "13px", marginTop: "25px" }}
@@ -98,13 +97,13 @@ export default function About() {
                 {" "}
                 <Box>
                   <Typography color="#DAC5A799" fontSize="13px">
-                    Arik Andersson
+                    Amirreza Mirshafiee
                   </Typography>
                   <Typography color="#DAC5A799" fontSize="40px">
                     Your Partner in Bringing Your Web Design Vision to Life
                   </Typography>
                   <Typography color="#DAC5A799" fontSize="13px">
-                    As a freelance web designer and developer, I bring a unique
+                    As a freelance full stack developer, I bring a unique
                     combination of creativity and technical expertise to every
                     project. With a keen eye for design and a passion for
                     delivering user-friendly web experiences, I work closely
@@ -126,6 +125,7 @@ export default function About() {
                       width="100%"
                       height="100%"
                       src="assets/aboutimg2.jfif"
+                      alt="img"
                     />
                   </Box>
                 </Box>

@@ -1,7 +1,6 @@
 import React from "react";
 import { Stack, Box, Typography, Button, Divider } from "@mui/material";
 import SouthIcon from "@mui/icons-material/South";
-import CallMadeIcon from "@mui/icons-material/CallMade";
 export default function Services() {
   return (
     <>
@@ -12,7 +11,7 @@ export default function Services() {
           backgroundColor: "#000000",
           flexDirection: "column",
           pt: "200px",
-          pb:10
+          pb: 10,
         }}
       >
         <Stack
@@ -27,15 +26,15 @@ export default function Services() {
           }}
         >
           <Box>
-            <Typography variant="h3" sx={{ color: "#DAC5A7",  }}>
-            Full Stack Developer
+            <Typography variant="h3" sx={{ color: "#DAC5A7" }}>
+              Full Stack Developer
             </Typography>
             <Typography variant="h2" sx={{ color: "#DAC5A7" }}>
-            Mern Stack
+              Mern Stack
             </Typography>
             <Typography variant="body1" sx={{ color: "#DAC5A799" }}>
-              Premium web design, development, and SEO services to help your
-              business stand out.
+              Premium Front-End and Back-End development, and SEO services to
+              help your business stand out.
             </Typography>
             <Button
               sx={{ color: "#DAC5A7", fontSize: "13px", marginTop: "30px" }}
@@ -88,14 +87,19 @@ export default function Services() {
               }}
             >
               <Typography variant="h6" color="#DAC5A7" fontSize="13px">
-                Webdesign
+                Front-End
               </Typography>
               <Typography variant="h4" color="#DAC5A7" fontSize="25px">
                 Transforming Your Ideas into Reality
               </Typography>
             </Box>
             <Box mt={2} sx={{ width: "100%", height: "100%" }}>
-              <img width="100%" height="100%" src="assets/servicesimg3.jfif" />
+              <img
+                width="100%"
+                height="100%"
+                src="assets/servicesimg3.jfif"
+                alt="img"
+              />
             </Box>
             <Box mt={5} width="100%" height="100%">
               <Box
@@ -105,22 +109,12 @@ export default function Services() {
                   justifyContent: "space-between",
                 }}
               >
-                <Typography
-                  color="#DAC5A7"
-                  textAlign="center"
-                  width="20%"
-                  // height="21px"
-                >
-                  Concept
+                <Typography color="#DAC5A7" textAlign="center" width="20%">
+                  User Interface
                 </Typography>
-                <Typography
-                  color="#DAC5A799"
-                  textAlign="center"
-                  width="80%"
-                  // height="58px"
-                >
-                  I take time to understand your business needs and audience to
-                  develop a unique concept for your website.
+                <Typography color="#DAC5A799" textAlign="center" width="80%">
+                  I provide a visually appealing and easy-to-navigate user
+                  interface that enhances the overall user experience
                 </Typography>
               </Box>
               <Divider
@@ -137,22 +131,12 @@ export default function Services() {
                   justifyContent: "space-between",
                 }}
               >
-                <Typography
-                  color="#DAC5A7"
-                  textAlign="center"
-                  width="20%"
-                  // height="21px"
-                >
-                  CMS Integration
+                <Typography color="#DAC5A7" textAlign="center" width="20%">
+                  Performance
                 </Typography>
-                <Typography
-                  color="#DAC5A799"
-                  textAlign="center"
-                  width="80%"
-                  // height="58px"
-                >
-                  I can help you streamline your content management process by
-                  integrating a CMS into your website.
+                <Typography color="#DAC5A799" textAlign="center" width="80%">
+                  I optimize your website for fast loading times and smooth
+                  operation to ensure a seamless user experience.
                 </Typography>
               </Box>
               <Divider
@@ -169,22 +153,13 @@ export default function Services() {
                   justifyContent: "space-between",
                 }}
               >
-                <Typography
-                  color="#DAC5A7"
-                  textAlign="center"
-                  width="20%"
-                  // height="21px"
-                >
-                  WEB Design System
+                <Typography color="#DAC5A7" textAlign="center" width="20%">
+                  Mobile responsiveness
                 </Typography>
-                <Typography
-                  color="#DAC5A799"
-                  textAlign="center"
-                  width="80%"
-                  // height="58px"
-                >
-                  I use a modular design approach to create a web design system
-                  that ensures consistency throughout your website.
+                <Typography color="#DAC5A799" textAlign="center" width="80%">
+                  I create website that responsive and adaptable to various
+                  devices and screen sizes, including mobile phones, tablets,
+                  and desktops.
                 </Typography>
               </Box>
             </Box>
@@ -219,14 +194,19 @@ export default function Services() {
               }}
             >
               <Typography variant="h6" color="#DAC5A7" fontSize="13px">
-                Development
+                Back-End
               </Typography>
               <Typography variant="h4" color="#DAC5A7" fontSize="25px">
-                Developing High-Performance Websites and Web Applications{" "}
+                Developing High-Performance and secure Websites{" "}
               </Typography>
             </Box>
             <Box mt={2} sx={{ width: "100%", height: "100%" }}>
-              <img width="100%" height="100%" src="assets/servicesimg2.jfif" />
+              <img
+                width="100%"
+                height="100%"
+                src="assets/servicesimg2.jfif"
+                alt="img"
+              />
             </Box>
             <Box mt={5} width="100%" height="100%">
               <Box
@@ -236,22 +216,13 @@ export default function Services() {
                   justifyContent: "space-between",
                 }}
               >
-                <Typography
-                  color="#DAC5A7"
-                  textAlign="center"
-                  width="20%"
-                  // height="21px"
-                >
-                  Concept
+                <Typography color="#DAC5A7" textAlign="center" width="20%">
+                  Data storage and management
                 </Typography>
-                <Typography
-                  color="#DAC5A799"
-                  textAlign="center"
-                  width="80%"
-                  // height="58px"
-                >
-                  I take time to understand your business needs and audience to
-                  develop a unique concept for your website.
+                <Typography color="#DAC5A799" textAlign="center" width="80%">
+                  I provide a secure and efficient way to store and manage data,
+                  ensuring that it is organized, accessible, and easily
+                  retrievable when needed.
                 </Typography>
               </Box>
               <Divider
@@ -268,22 +239,14 @@ export default function Services() {
                   justifyContent: "space-between",
                 }}
               >
-                <Typography
-                  color="#DAC5A7"
-                  textAlign="center"
-                  width="20%"
-                  // height="21px"
-                >
-                  CMS Integration
+                <Typography color="#DAC5A7" textAlign="center" width="20%">
+                  Security
                 </Typography>
-                <Typography
-                  color="#DAC5A799"
-                  textAlign="center"
-                  width="80%"
-                  // height="58px"
-                >
-                  I can help you streamline your content management process by
-                  integrating a CMS into your website.
+                <Typography color="#DAC5A799" textAlign="center" width="80%">
+                  I implement strong security measures to protect sensitive
+                  data, prevent unauthorized access, and mitigate potential
+                  security threats, such as SQL injection or cross-site
+                  scripting attacks.
                 </Typography>
               </Box>
               <Divider
@@ -300,22 +263,13 @@ export default function Services() {
                   justifyContent: "space-between",
                 }}
               >
-                <Typography
-                  color="#DAC5A7"
-                  textAlign="center"
-                  width="20%"
-                  // height="21px"
-                >
-                  WEB Design System
+                <Typography color="#DAC5A7" textAlign="center" width="20%">
+                  Performance optimization
                 </Typography>
-                <Typography
-                  color="#DAC5A799"
-                  textAlign="center"
-                  width="80%"
-                  // height="58px"
-                >
-                  I use a modular design approach to create a web design system
-                  that ensures consistency throughout your website.
+                <Typography color="#DAC5A799" textAlign="center" width="80%">
+                  I optimize your website performance, ensuring that it runs
+                  efficiently and quickly processes requests to provide a
+                  seamless user experience.
                 </Typography>
               </Box>
             </Box>
@@ -357,7 +311,12 @@ export default function Services() {
               </Typography>
             </Box>
             <Box mt={2} sx={{ width: "100%", height: "100%" }}>
-              <img width="100%" height="100%" src="assets/servicesimg4.jfif" />
+              <img
+                width="100%"
+                height="100%"
+                src="assets/servicesimg4.jfif"
+                alt="img"
+              />
             </Box>
             <Box mt={5} width="100%" height="100%">
               <Box
@@ -367,22 +326,12 @@ export default function Services() {
                   justifyContent: "space-between",
                 }}
               >
-                <Typography
-                  color="#DAC5A7"
-                  textAlign="center"
-                  width="20%"
-                  // height="21px"
-                >
-                  Concept
+                <Typography color="#DAC5A7" textAlign="center" width="20%">
+                  website visibility
                 </Typography>
-                <Typography
-                  color="#DAC5A799"
-                  textAlign="center"
-                  width="80%"
-                  // height="58px"
-                >
-                  I take time to understand your business needs and audience to
-                  develop a unique concept for your website.
+                <Typography color="#DAC5A799" textAlign="center" width="80%">
+                  I help improve your website's ranking on search engine results
+                  pages, making it easier for users to find and visit the site.
                 </Typography>
               </Box>
               <Divider
@@ -399,22 +348,13 @@ export default function Services() {
                   justifyContent: "space-between",
                 }}
               >
-                <Typography
-                  color="#DAC5A7"
-                  textAlign="center"
-                  width="20%"
-                  // height="21px"
-                >
-                  CMS Integration
+                <Typography color="#DAC5A7" textAlign="center" width="20%">
+                  Competing with competitors
                 </Typography>
-                <Typography
-                  color="#DAC5A799"
-                  textAlign="center"
-                  width="80%"
-                  // height="58px"
-                >
-                  I can help you streamline your content management process by
-                  integrating a CMS into your website.
+                <Typography color="#DAC5A799" textAlign="center" width="80%">
+                  I allow your business to stay competitive in your industry by
+                  improving your online visibility and ranking relative to
+                  competitors.
                 </Typography>
               </Box>
               <Divider
@@ -431,22 +371,13 @@ export default function Services() {
                   justifyContent: "space-between",
                 }}
               >
-                <Typography
-                  color="#DAC5A7"
-                  textAlign="center"
-                  width="20%"
-                  // height="21px"
-                >
-                  WEB Design System
+                <Typography color="#DAC5A7" textAlign="center" width="20%">
+                  Driving organic traffic
                 </Typography>
-                <Typography
-                  color="#DAC5A799"
-                  textAlign="center"
-                  width="80%"
-                  // height="58px"
-                >
-                  I use a modular design approach to create a web design system
-                  that ensures consistency throughout your website.
+                <Typography color="#DAC5A799" textAlign="center" width="80%">
+                  I help attract users who are actively searching for
+                  relevant content, products, or services, leading to higher
+                  quality traffic and potential conversions.
                 </Typography>
               </Box>
             </Box>

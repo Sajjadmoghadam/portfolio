@@ -47,7 +47,7 @@ function Navbar() {
     >
       <Container
         maxWidth="xl"
-        sx={{ display: "flex", justifyContent: "center" }}
+        sx={{ display: "flex", justifyContent: "center", alignItems:'center' }}
       >
         <Toolbar disableGutters>
           <Link to={"/"} style={{ textDecoration: "none" }}>
@@ -64,6 +64,7 @@ function Navbar() {
                 letterSpacing: ".2rem",
                 color: "#fff",
                 textDecoration: "none",
+                pb:'7px'
               }}
             >
               Amirreza
