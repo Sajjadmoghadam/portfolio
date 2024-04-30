@@ -5,7 +5,62 @@ import CallMadeIcon from "@mui/icons-material/CallMade";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailIcon from "@mui/icons-material/Mail";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Atropos from "atropos/react";
+import "atropos/css";
+import Image from "mui-image";
+
 export default function About() {
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(() => {
+    gsap.from(".about-header", {
+      y: -200,
+      duration: 2,
+      opacity: 0,
+    });
+    gsap.from(".about-me-desc", {
+      scrollTrigger: {
+        trigger: ".about-me-desc",
+        start: "top 100%",
+        end: "bottom 60%",
+        scrub: true,
+      },
+      y: 250,
+      duration: 1,
+    });
+    gsap.from(".about-me-btns", {
+      scrollTrigger: {
+        trigger: ".about-me-btns",
+        start: "top 100%",
+        end: "bottom 60%",
+        scrub: true,
+      },
+      y: 200,
+      duration: 1,
+    });
+    gsap.from(".about-me-awards", {
+      scrollTrigger: {
+        trigger: ".about-me-awards",
+        start: "top 100%",
+        end: "bottom 60%",
+        scrub: true,
+      },
+      y: 200,
+      duration: 1,
+    });
+    gsap.from(".about-me-skills", {
+      scrollTrigger: {
+        trigger: ".about-me-skills",
+        start: "top 100%",
+        end: "bottom 60%",
+        scrub: true,
+      },
+      y: 200,
+      duration: 1,
+    });
+  });
   return (
     <>
       <Stack
@@ -61,29 +116,31 @@ export default function About() {
               // height: "350px",
             }}
           >
-            <Typography variant="h3" color="#DAC5A7">
-              Amirreza Mirshafiee
-            </Typography>
-            <Typography variant="body2" color="#DAC5A799">
-              Delivering Premium Front-End and Back-End Development Services to
-              Boost Your Online Presence.
-            </Typography>
-            <Button
-              sx={{ color: "#DAC5A7", fontSize: "13px", marginTop: "25px" }}
-              startIcon={
-                <SouthIcon
-                  fontSize="small"
-                  sx={{
-                    color: "#DAC5A7",
-                    borderRadius: "50%",
-                    border: "1px solid #DAC5A726",
-                    padding: "5px",
-                  }}
-                />
-              }
-            >
-              My Services
-            </Button>
+            <Box className="about-header">
+              <Typography variant="h3" color="#DAC5A7">
+                Amirreza Mirshafiee
+              </Typography>
+              <Typography variant="body2" color="#DAC5A799">
+                Delivering Premium Front-End and Back-End Development Services
+                to Boost Your Online Presence.
+              </Typography>
+              <Button
+                sx={{ color: "#DAC5A7", fontSize: "13px", marginTop: "25px" }}
+                startIcon={
+                  <SouthIcon
+                    fontSize="small"
+                    sx={{
+                      color: "#DAC5A7",
+                      borderRadius: "50%",
+                      border: "1px solid #DAC5A726",
+                      padding: "5px",
+                    }}
+                  />
+                }
+              >
+                About Me
+              </Button>
+            </Box>
             <Stack
               mt={15}
               sx={{
@@ -92,6 +149,7 @@ export default function About() {
                 backgroundColor: "#DAC5A726",
                 padding: "50px ",
               }}
+              className="about-me-desc"
             >
               <Stack flexDirection="column">
                 {" "}
@@ -135,6 +193,7 @@ export default function About() {
               mt={5}
               gap="30px"
               sx={{ width: "100%", flexDirection: { xs: "column", sm: "row" } }}
+              className="about-me-btns"
             >
               <Box
                 sx={{
@@ -193,6 +252,7 @@ export default function About() {
                 padding: "50px ",
                 flexDirection: "column",
               }}
+              className="about-me-awards"
             >
               <Typography color="#DAC5A799" fontSize="13px">
                 Awards
@@ -268,6 +328,7 @@ export default function About() {
                 padding: "50px ",
                 flexDirection: "column",
               }}
+              className="about-me-skills"
             >
               <Typography color="#DAC5A799" fontSize="13px">
                 Skills

@@ -10,6 +10,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Atropos from "atropos/react";
 import "atropos/css";
+// import Image from 'mui-image';
 
 const Root = styled("div")(({ theme }) => ({
   width: "100%",
@@ -21,7 +22,8 @@ const Root = styled("div")(({ theme }) => ({
 }));
 
 export default function Home() {
-  // const homePage = useRef();
+
+  
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     gsap.from(".home-header", {
@@ -50,6 +52,39 @@ export default function Home() {
       },
       y: 300,
       duration: 1,
+    });
+    gsap.from(".step-header", {
+      scrollTrigger: {
+        trigger: ".step-header",
+        start: "top 100%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+      y: 200,
+      // duration: .5,
+      opacity: 0,
+    });
+    gsap.from(".step-header-small", {
+      scrollTrigger: {
+        trigger: ".step-header-small",
+        start: "top 100%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+      y: 200,
+      duration: 1,
+      opacity: 0,
+    });
+    gsap.from(".step-desc", {
+      scrollTrigger: {
+        trigger: ".step-desc",
+        start: "top 100%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+      y: 200,
+      // duration: 1,
+      opacity: 0,
     });
     gsap.from(".step-box1", {
       scrollTrigger: {
@@ -105,6 +140,28 @@ export default function Home() {
       x: 500,
       duration: 1.5,
       opacity: 0.2,
+    });
+    gsap.from(".about-me-name", {
+      scrollTrigger: {
+        trigger: ".about-me-name",
+        start: "center 100%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+      // x: 500,
+      duration: 2,
+      opacity: 0,
+    });
+    gsap.from(".about-me", {
+      scrollTrigger: {
+        trigger: ".about-me",
+        start: "center 100%",
+        end: "bottom 80%",
+        scrub: true,
+      },
+      // x: 500,
+      duration: 2,
+      opacity: 0,
     });
   });
 
@@ -380,6 +437,11 @@ export default function Home() {
             }}
           >
             <Atropos rotate="true">
+              {/* <Image
+              src="assets/HomepageIMG1.png"
+              showLoading
+              duration={325}
+              /> */}
               <img
                 className="img1"
                 src="assets/HomepageIMG1.png"
@@ -424,7 +486,7 @@ export default function Home() {
               justifyContent: "space-evenly",
             }}
           >
-            <Typography sx={{ color: "#DAC5A7" }}>THE PROCESS</Typography>
+            <Typography className="step-header-small" sx={{ color: "#DAC5A7" }}>THE PROCESS</Typography>
             <Typography
               sx={{
                 color: "#DAC5A7",
@@ -437,6 +499,7 @@ export default function Home() {
                   xs: "60px",
                 },
               }}
+              className="step-header"
             >
               Your Website <br /> in 5 steps
             </Typography>
@@ -452,6 +515,7 @@ export default function Home() {
                   xs: "20px",
                 },
               }}
+              className="step-desc"
             >
               Our process ensures that we create a website
               <br /> tailored to your business needs.{" "}
@@ -1460,6 +1524,7 @@ export default function Home() {
           }}
         >
           <Typography
+           className="about-me-name"
             sx={{
               color: "#DAC5A7",
               fontSize: {
@@ -1475,6 +1540,7 @@ export default function Home() {
             Amirreza Mirshafiee
           </Typography>
           <Stack
+            className="about-me"
             flexDirection={{
               lg: "row",
               xl: "row",
