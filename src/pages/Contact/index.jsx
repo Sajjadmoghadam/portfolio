@@ -1,15 +1,17 @@
 import { Stack, Box, Typography, TextField, Button } from "@mui/material";
-import { TextareaAutosize as BaseTextareaAutosize } from "@mui/base/TextareaAutosize";
-import SouthIcon from "@mui/icons-material/South";
-import CallMadeIcon from "@mui/icons-material/CallMade";
+import TextareaAutosize from "react-textarea-autosize";
+
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailIcon from "@mui/icons-material/Mail";
-import { styled } from "@mui/system";
 
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
+  const [username, setUsername] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+
   const blue = {
     100: "#DAECFF",
     200: "#b6daff",
@@ -32,38 +34,6 @@ export default function Contact() {
     900: "#1C2025",
   };
 
-  const Textarea = styled(BaseTextareaAutosize)(
-    ({ theme }) => `
-    box-sizing: border-box;
-    width: 100%;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 12px;
-    border-radius: 12px 12px 0 12px;
-    color:C;
-    background:#DAC5A726};
-    border: 1px solid #DAC5A726;
-    box-shadow: 0px 2px 2px ${
-      theme.palette.mode === "dark" ? grey[900] : grey[50]
-    };
-
-    &:hover {
-      border-color: #DAC5A726   ;
-    }
-
-    &:focus {
-      outline: 0;
-      border-color: #DAC5A726;
-    }
-
-    // firefox
-    &:focus-visible {
-      outline: 0;
-    }
-  `
-  );
   return (
     <>
       <Stack sx={{ backgroundColor: "#000000", flexDirection: "column" }}>
@@ -75,8 +45,8 @@ export default function Contact() {
             alignItems: "center",
             justifyContent: "center",
             marginTop: "12%",
-            pb:10,
-            width:'100%',
+            pb: 10,
+            width: "100%",
           }}
         >
           <Box
@@ -84,7 +54,7 @@ export default function Contact() {
               width: "40%",
               height: "600px",
               alignItems: "center",
-              display:{xs:'none',sm:'none',md:'block'}
+              display: { xs: "none", sm: "none", md: "block" },
             }}
           >
             <img
@@ -98,7 +68,7 @@ export default function Contact() {
             <Box
               sx={{
                 backgroundColor: "#DAC5A726",
-                width: {lg:'600px',md:'550px',sm:'550px',xs:'100%'},
+                width: { lg: "600px", md: "550px", sm: "550px", xs: "100%" },
                 display: "flex",
                 flexDirection: "column",
                 padding: "30px 50px",
@@ -120,27 +90,48 @@ export default function Contact() {
                 sx={{ display: "flex", flexDirection: "column" }}
               >
                 <TextField
-                  label="Name"
-                  variant="outlined"
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    border: "1px solid #DAC5A726"
-                    
-                  }}
-                />
-                <TextField
-                  label="Name"
+                  label="Username"
+                  value={username}
+                  required
+                  onChange={(e) => setUsername(e.target.value)}
+                  type="text"
                   variant="outlined"
                   sx={{
                     backgroundColor: "#DAC5A726",
                     border: "1px solid #DAC5A726",
                   }}
                 />
-                <Textarea
-                  aria-label="minimum height"
-                  minRows={7}
-                  placeholder="Message"
+
+                <TextField
+                  label="Email"
+                  variant="outlined"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                  type="email"
+                  required
+                  style={{
+                    backgroundColor: "#DAC5A726",
+                    border: "1px solid #DAC5A726",
+                  
+                  }}
                 />
+                <TextareaAutosize
+                placeholder="Message"
+                label="Message"
+
+                value={message}
+                onChange={(e)=>setMessage(e.target.value)}
+                minRows={7}
+                  style={{
+                    backgroundColor: "#DAC5A726",
+                    border: "1px solid #DAC5A726",
+                    color:'black',
+                    
+                  }}
+                />
+
                 <Button
                   variant="text"
                   sx={{
@@ -171,8 +162,7 @@ export default function Contact() {
                   display: "flex",
                   justifyContent: "center",
                   padding: "1px",
-                  color:'#DAC5A7'
-
+                  color: "#DAC5A7",
                 }}
               >
                 Linkedin
@@ -188,8 +178,7 @@ export default function Contact() {
                   display: "flex",
                   justifyContent: "center",
                   padding: "1px",
-                  color:'#DAC5A7'
-
+                  color: "#DAC5A7",
                 }}
               >
                 Github
@@ -205,7 +194,7 @@ export default function Contact() {
                   display: "flex",
                   justifyContent: "center",
                   padding: "1px",
-                  color:'#DAC5A7'
+                  color: "#DAC5A7",
                 }}
               >
                 Email
@@ -217,4 +206,3 @@ export default function Contact() {
     </>
   );
 }
-
