@@ -8,6 +8,8 @@ import { styled } from "@mui/material/styles";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Atropos from "atropos/react";
+import "atropos/css";
 
 const Root = styled("div")(({ theme }) => ({
   width: "100%",
@@ -158,8 +160,8 @@ export default function Home() {
               fontSize: "18px",
             }}
           >
-            Premium Front-End and Back-End development and SEO <br /> services in help your
-            business stand out
+            Premium Front-End and Back-End development and SEO <br /> services
+            in help your business stand out
           </Typography>
         </Box>
         <Box
@@ -193,9 +195,11 @@ export default function Home() {
                 FRONT-END
               </Typography>
               <Typography sx={{ color: "#DAC5A7" }}>
-                Visually appealing websites, with a clean and<br />
+                Visually appealing websites, with a clean and
+                <br />
                 modern design. Your website layout is responsive <br />
-                and adapts to different screen sizes and devices.<br />
+                and adapts to different screen sizes and devices.
+                <br />
               </Typography>
             </Stack>
             <Stack
@@ -241,9 +245,9 @@ export default function Home() {
               <Typography sx={{ color: "#DAC5A7" }}>02</Typography>
               <Typography sx={{ color: "#DAC5A7", my: 1 }}>BACK-END</Typography>
               <Typography sx={{ color: "#DAC5A7" }}>
-                Security measures are carefully implemented <br /> 
+                Security measures are carefully implemented <br />
                 to protect sensitive information and prevent <br />
-                unauthorized access to your website. 
+                unauthorized access to your website.
               </Typography>
             </Stack>
             <Stack
@@ -375,30 +379,40 @@ export default function Home() {
               width: "100%",
             }}
           >
-            <img
-              className="img1"
-              src="assets/HomepageIMG1.png"
-              alt="img"
-              style={{ width: "50%" }}
-            />
-            <img
-              className="img2"
-              src="assets/HomepageIMG2.png"
-              alt="img"
-              style={{ width: "50%" }}
-            />
+            <Atropos rotate="true">
+              <img
+                className="img1"
+                src="assets/HomepageIMG1.png"
+                alt="img"
+                style={{ width: "100%" }}
+              />
+            </Atropos>
+            <Atropos rotate="true">
+              <img
+                className="img2"
+                src="assets/HomepageIMG2.png"
+                alt="img"
+                style={{ width: "100%" }}
+              />
+            </Atropos>
           </Stack>
           <Stack flexDirection={"row"} sx={{ mt: 3, gap: 2, width: "100%" }}>
-            <img
-              src="assets/HomepageIMG3.png"
-              alt="img"
-              style={{ width: "50%" }}
-            />
-            <img
-              src="assets/HomepageIMG4.png"
-              alt="img"
-              style={{ width: "50%" }}
-            />
+            <Atropos rotate="true">
+              <img
+                className="img3"
+                src="assets/HomepageIMG3.png"
+                alt="img"
+                style={{ width: "100%" }}
+              />
+            </Atropos>
+            <Atropos rotate="true">
+              <img
+                className="img4"
+                src="assets/HomepageIMG4.png"
+                alt="img"
+                style={{ width: "100%" }}
+              />
+            </Atropos>
           </Stack>
         </Box>
         <Box sx={{ mt: "150px", width: "100%" }}>
@@ -1458,7 +1472,7 @@ export default function Home() {
               mb: 6,
             }}
           >
-            Yousef Boroushaki
+            Amirreza Mirshafiee
           </Typography>
           <Stack
             flexDirection={{
@@ -1480,7 +1494,7 @@ export default function Home() {
               A website that leaves <br />a lasting impression !
             </Typography>
             <Typography sx={{ color: "#DAC5A7" }}>
-              Hi, I'm Yousef Boroushaki - a freelancer specializing in premium
+              Hi, I'm Amirreza Mirshafiee - a freelancer specializing in premium
               web <br />
               development I'm passionate about creating unique and effective
               solutions <br />
