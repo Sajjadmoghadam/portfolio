@@ -1,7 +1,62 @@
 import React from "react";
 import { Stack, Box, Typography, Button, Divider } from "@mui/material";
 import SouthIcon from "@mui/icons-material/South";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Atropos from "atropos/react";
+import "atropos/css";
+import Image from "mui-image";
 export default function Services() {
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(() => {
+    gsap.from(".services-header", {
+      y: -200,
+      duration: 2,
+      opacity: 0,
+      // delay:0.5
+    });
+    gsap.from(".services-header-img", {
+      y: 200,
+      duration: 2,
+      opacity: 0,
+      // delay:0.5
+    });
+    gsap.from(".service-1", {
+      scrollTrigger: {
+        trigger: ".service-1",
+        start: "top 100%",
+        end: "bottom 60%",
+        scrub: true,
+      },
+      y: 200,
+      duration: 1,
+      opacity: 0.7,
+    });
+    gsap.from(".service-2", {
+      scrollTrigger: {
+        trigger: ".service-2",
+        start: "top 100%",
+        end: "bottom 60%",
+        scrub: true,
+      },
+      y: 200,
+      duration: 1,
+      opacity: 0.7,
+    });
+    gsap.from(".service-3", {
+      scrollTrigger: {
+        trigger: ".service-3",
+        start: "top 100%",
+        end: "bottom 60%",
+        scrub: true,
+      },
+      y: 200,
+      duration: 1,
+      opacity: 0.7,
+    });
+  });
+
   return (
     <>
       <Stack
@@ -25,7 +80,7 @@ export default function Services() {
             textAlign: "center",
           }}
         >
-          <Box>
+          <Box className="services-header">
             <Typography variant="h3" sx={{ color: "#DAC5A7" }}>
               Full Stack Developer
             </Typography>
@@ -55,7 +110,13 @@ export default function Services() {
           </Box>
 
           <Box mt={5} sx={{ width: "100%", height: "100%" }}>
-            <img width="80%" height="100%" src="assets/servicesimg1.png" />
+            <img
+              className="services-header-img"
+              width="50%"
+              height="100%"
+              src="assets/servicesimg1.png"
+              alt="img"
+            />
           </Box>
         </Stack>
         <Stack
@@ -63,6 +124,7 @@ export default function Services() {
             width: "100%",
             height: "100%",
           }}
+          className="service-1"
         >
           <Stack
             mt={10}
@@ -94,12 +156,14 @@ export default function Services() {
               </Typography>
             </Box>
             <Box mt={2} sx={{ width: "100%", height: "100%" }}>
-              <img
-                width="100%"
-                height="100%"
-                src="assets/servicesimg3.jfif"
-                alt="img"
-              />
+              <Atropos rotate="true">
+                <img
+                  width="100%"
+                  height="100%"
+                  src="assets/servicesimg3.jfif"
+                  alt="img"
+                />
+              </Atropos>
             </Box>
             <Box mt={5} width="100%" height="100%">
               <Box
@@ -170,6 +234,7 @@ export default function Services() {
             width: "100%",
             height: "100%",
           }}
+          className="service-2"
         >
           <Stack
             mt={5}
@@ -201,12 +266,14 @@ export default function Services() {
               </Typography>
             </Box>
             <Box mt={2} sx={{ width: "100%", height: "100%" }}>
-              <img
-                width="100%"
-                height="100%"
-                src="assets/servicesimg2.jfif"
-                alt="img"
-              />
+              <Atropos rotate="true">
+                <img
+                  width="100%"
+                  height="100%"
+                  src="assets/servicesimg2.jfif"
+                  alt="img"
+                />
+              </Atropos>
             </Box>
             <Box mt={5} width="100%" height="100%">
               <Box
@@ -280,6 +347,7 @@ export default function Services() {
             width: "100%",
             height: "100%",
           }}
+          className="service-3"
         >
           <Stack
             mt={5}
@@ -311,12 +379,14 @@ export default function Services() {
               </Typography>
             </Box>
             <Box mt={2} sx={{ width: "100%", height: "100%" }}>
-              <img
-                width="100%"
-                height="100%"
-                src="assets/servicesimg4.jfif"
-                alt="img"
-              />
+              <Atropos rotate="true">
+                <img
+                  width="100%"
+                  height="100%"
+                  src="assets/servicesimg4.jfif"
+                  alt="img"
+                />
+              </Atropos>
             </Box>
             <Box mt={5} width="100%" height="100%">
               <Box
@@ -375,9 +445,9 @@ export default function Services() {
                   Driving organic traffic
                 </Typography>
                 <Typography color="#DAC5A799" textAlign="center" width="80%">
-                  I help attract users who are actively searching for
-                  relevant content, products, or services, leading to higher
-                  quality traffic and potential conversions.
+                  I help attract users who are actively searching for relevant
+                  content, products, or services, leading to higher quality
+                  traffic and potential conversions.
                 </Typography>
               </Box>
             </Box>
