@@ -1,16 +1,33 @@
 import { Stack, Box, Typography, TextField, Button } from "@mui/material";
 import TextareaAutosize from "react-textarea-autosize";
-
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailIcon from "@mui/icons-material/Mail";
-
+import Snackbar from "@mui/material/Snackbar";
+import Alert from "@mui/material/Alert";
 import React, { useState } from "react";
 
 export default function Contact() {
-  const [username, setUsername] = useState();
-  const [email, setEmail] = useState();
-  const [message, setMessage] = useState();
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [open, setOpen] = useState(false);
+  const [disable, setDisabled] = useState(false);
+
+  const handleClick = () => {
+    setUsername('')
+    setEmail('')
+    setMessage('')
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
 
   const blue = {
     100: "#DAECFF",
@@ -96,13 +113,19 @@ export default function Contact() {
                   onChange={(e) => setUsername(e.target.value)}
                   type="text"
                   variant="outlined"
+                  
                   sx={{
                     backgroundColor: "#DAC5A726",
                     border: "1px solid #DAC5A726",
+                    '&:focus': {
+                      color:'red !important'
+                    }
+                  
                   }}
                 />
 
                 <TextField
+                
                   label="Email"
                   variant="outlined"
                   value={email}
@@ -114,26 +137,25 @@ export default function Contact() {
                   style={{
                     backgroundColor: "#DAC5A726",
                     border: "1px solid #DAC5A726",
-                  
                   }}
                 />
                 <TextareaAutosize
-                placeholder="Message"
-                label="Message"
-
-                value={message}
-                onChange={(e)=>setMessage(e.target.value)}
-                minRows={7}
+                
+                  placeholder="Message"
+                  label="Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  minRows={7}
                   style={{
                     backgroundColor: "#DAC5A726",
                     border: "1px solid #DAC5A726",
-                    color:'black',
-                    
+                    color: "black",
+                    resize:'none'
                   }}
                 />
-
                 <Button
                   variant="text"
+                  onClick={handleClick}
                   sx={{
                     backgroundColor: "#DAC5A7",
                     width: "100%",
@@ -149,6 +171,21 @@ export default function Contact() {
                 >
                   Send Message
                 </Button>
+
+                <Snackbar
+                  open={open}
+                  autoHideDuration={3000}
+                  onClose={handleClose}
+                >
+                  <Alert
+                    onClose={handleClose}
+                    severity="success"
+                    variant="filled"
+                    sx={{ width: "100%" }}
+                  >
+                    Message Sent Successfully
+                  </Alert>
+                </Snackbar>
               </Box>
             </Box>
             <Stack width="100%" mt={5} gap="30px" flexDirection="column">
