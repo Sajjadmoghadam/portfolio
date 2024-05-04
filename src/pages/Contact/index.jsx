@@ -1,23 +1,23 @@
-import { Stack, Box, Typography, TextField, Button } from "@mui/material";
+import { Stack, Box, Typography, TextField, Button, Link } from "@mui/material";
 import TextareaAutosize from "react-textarea-autosize";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import MailIcon from "@mui/icons-material/Mail";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import React, { useState } from "react";
 
 export default function Contact() {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const [open, setOpen] = useState(false);
   const [disable, setDisabled] = useState(false);
 
   const handleClick = () => {
-    setUsername('')
-    setEmail('')
-    setMessage('')
+    setUsername("");
+    setEmail("");
+    setMessage("");
     setOpen(true);
   };
 
@@ -113,19 +113,16 @@ export default function Contact() {
                   onChange={(e) => setUsername(e.target.value)}
                   type="text"
                   variant="outlined"
-                  
                   sx={{
                     backgroundColor: "#DAC5A726",
                     border: "1px solid #DAC5A726",
-                    '&:focus': {
-                      color:'red !important'
-                    }
-                  
+                    "&:focus": {
+                      color: "red !important",
+                    },
                   }}
                 />
 
                 <TextField
-                
                   label="Email"
                   variant="outlined"
                   value={email}
@@ -140,7 +137,6 @@ export default function Contact() {
                   }}
                 />
                 <TextareaAutosize
-                
                   placeholder="Message"
                   label="Message"
                   value={message}
@@ -150,7 +146,7 @@ export default function Contact() {
                     backgroundColor: "#DAC5A726",
                     border: "1px solid #DAC5A726",
                     color: "black",
-                    resize:'none'
+                    resize: "none",
                   }}
                 />
                 <Button
@@ -189,53 +185,69 @@ export default function Contact() {
               </Box>
             </Box>
             <Stack width="100%" mt={5} gap="30px" flexDirection="column">
-              <Button
-                startIcon={<LinkedInIcon />}
-                sx={{
-                  backgroundColor: "#DAC5A726",
-                  width: "100%",
-                  height: "56px",
-                  alignItems: "center",
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "1px",
-                  color: "#DAC5A7",
-                }}
+              <Link
+                href="https://www.linkedin.com/in/amirreza-mirshafiee-a029a025b"
+                target="_blank"
+                sx={{ textDecoration: "none" }}
               >
-                Linkedin
-              </Button>
-
-              <Button
-                startIcon={<GitHubIcon />}
-                sx={{
-                  backgroundColor: "#DAC5A726",
-                  width: "100%",
-                  height: "56px",
-                  alignItems: "center",
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "1px",
-                  color: "#DAC5A7",
-                }}
+                <Button
+                  startIcon={<LinkedInIcon />}
+                  sx={{
+                    backgroundColor: "#DAC5A726",
+                    width: "100%",
+                    height: "56px",
+                    alignItems: "center",
+                    display: "flex",
+                    justifyContent: "center",
+                    padding: "1px",
+                    color: "#DAC5A7",
+                  }}
+                >
+                  Linkedin
+                </Button>
+              </Link>
+              <Link
+                href="https://github.com/AmirrezaMirshafiee"
+                target="_blank"
+                sx={{ textDecoration: "none" }}
               >
-                Github
-              </Button>
-
-              <Button
-                startIcon={<MailIcon />}
-                sx={{
-                  backgroundColor: "#DAC5A726",
-                  width: "100%",
-                  height: "56px",
-                  alignItems: "center",
-                  display: "flex",
-                  justifyContent: "center",
-                  padding: "1px",
-                  color: "#DAC5A7",
-                }}
+                <Button
+                  startIcon={<GitHubIcon />}
+                  sx={{
+                    backgroundColor: "#DAC5A726",
+                    width: "100%",
+                    height: "56px",
+                    alignItems: "center",
+                    display: "flex",
+                    justifyContent: "center",
+                    padding: "1px",
+                    color: "#DAC5A7",
+                  }}
+                >
+                  Github
+                </Button>
+              </Link>
+              <Link
+                href="https://www.instagram.com/amirwrezam?igsh=MTl6dGx6NzVqbHEyMw=="
+                target="_blank"
+                sx={{ textDecoration: "none" }}
               >
-                Email
-              </Button>
+                <Button
+                  startIcon={<InstagramIcon />}
+                  sx={{
+                    backgroundColor: "#DAC5A726",
+                    width: "100%",
+                    height: "56px",
+                    alignItems: "center",
+                    display: "flex",
+                    justifyContent: "center",
+                    padding: "1px",
+                    color: "#DAC5A7",
+                  }}
+                >
+                  Instagram
+                </Button>
+              </Link>
             </Stack>
           </Stack>
         </Box>
