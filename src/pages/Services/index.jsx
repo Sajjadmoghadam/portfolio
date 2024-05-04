@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Atropos from "atropos/react";
 import "atropos/css";
 import Image from "mui-image";
+
 export default function Services() {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {

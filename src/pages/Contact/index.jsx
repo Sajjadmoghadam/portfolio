@@ -6,6 +6,8 @@ import MailIcon from "@mui/icons-material/Mail";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
 import React, { useState } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function Contact() {
   const [username, setUsername] = useState('');
@@ -51,9 +53,24 @@ export default function Contact() {
     900: "#1C2025",
   };
 
+  useGSAP(()=>{
+    gsap.from(".contact-img", {
+      x: -400,
+      duration: 2,
+      opacity: 0,
+      // delay:0.5
+    });
+    gsap.from(".contact-form", {
+      x: 400,
+      duration: 2,
+      opacity: 0,
+      // delay:0.5
+    });
+  })
+
   return (
     <>
-      <Stack sx={{ backgroundColor: "#000000", flexDirection: "column" }}>
+      <Stack sx={{ backgroundColor: "#000000", flexDirection: "column", overflow:'hidden' }}>
         <Box
           sx={{
             display: "flex",
@@ -79,9 +96,10 @@ export default function Contact() {
               height="100%"
               src="./assets/homepagePhoto.png"
               alt=""
+              className="contact-img"
             />
           </Box>
-          <Stack flexDirection="column">
+          <Stack flexDirection="column" className="contact-form">
             <Box
               sx={{
                 backgroundColor: "#DAC5A726",
