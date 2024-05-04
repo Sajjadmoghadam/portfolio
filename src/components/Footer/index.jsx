@@ -1,6 +1,6 @@
 import React from "react";
 import CallMadeIcon from "@mui/icons-material/CallMade";
-import { Stack, Box, Typography, Button, Divider } from "@mui/material";
+import { Stack, Box, Typography, Button, Divider, Link } from "@mui/material";
 import List from "@mui/material/List";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -9,7 +9,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListSubheader from "@mui/material/ListSubheader";
 import GitHubIcon from "@mui/icons-material/GitHub";
-
 export default function Footer() {
   return (
     <>
@@ -39,8 +38,8 @@ export default function Footer() {
               Website shine
             </Typography>
             <Typography color="#DAC5A799" variant="body1" fontSize="13">
-              Premium web development, and SEO services to help your
-              business stand out.
+              Premium web development, and SEO services to help your business
+              stand out.
             </Typography>
             <Button
               sx={{
@@ -67,70 +66,96 @@ export default function Footer() {
             </Button>
           </Box>
         </Stack>
-        <Stack width="100%"  >
-          <List
-            sx={{
-              width: "100%",
-              backgroundColor: "#171616",
-              display: "flex",
-              alignItems: "center",
-              flexDirection:{md:'row',sm:'row', xs:'column'},
-              gap:1,
-              justifyContent:'center'
-            }}
-          >
-            <ListItemText
-              primary=" Social Communities : "
+        <Stack
+          width="100%"
+          sx={{
+            backgroundColor: "#171616",
+            display: "flex",
+            justifyContent: "center",
+            alignItems:'center',
+            flexDirection: { md: "row" },
+            gap: 1,
+          }}
+        >
+          <Stack>
+            <Typography
               sx={{
                 color: "#DAC5A7",
               }}
-            />
-            <ListItemButton>
-              <ListItemIcon>
-                <InstagramIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
+            >
+              Social Communities :
+            </Typography>
+          </Stack>
+          <Stack direction={'row'} gap={'25px'}>
+            <Link
+              href="https://www.linkedin.com/in/amirreza-mirshafiee-a029a025b"
+              target="_blank"
+              sx={{ textDecoration: "none" }}
+            >
+              <ListItemButton>
+                <ListItemIcon>
+                  <Link>
+                    <InstagramIcon
+                      sx={{
+                        backgroundColor: "#DAC5A726",
+                        padding: "8px",
+                        borderRadius: "50%",
+                        width: "38px",
+                        height: "38px",
+                        color: "#DAC5A799",
+                      }}
+                    />
+                  </Link>
+                </ListItemIcon>
+                <ListItemText sx={{ color: "#DAC5A799" }} primary="Instagram" />
+              </ListItemButton>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/amirreza-mirshafiee-a029a025b"
+              target="_blank"
+              sx={{ textDecoration: "none" }}
+            >
+              <ListItemButton>
+                <ListItemIcon>
+                  <LinkedInIcon
+                    sx={{
+                      backgroundColor: "#DAC5A726",
+                      padding: "8px",
+                      borderRadius: "50%",
+                      width: "38px",
+                      height: "38px",
+                      color: "#DAC5A799",
+                    }}
+                  />
+                </ListItemIcon>
+                <ListItemText sx={{ color: "#DAC5A799" }} primary="LinkedIn" />
+              </ListItemButton>
+            </Link>
+            <Link
+              href="https://github.com/AmirrezaMirshafiee"
+              target="_blank"
+              sx={{ textDecoration: "none" }}
+            >
+              <ListItemButton>
+                <ListItemIcon>
+                  <GitHubIcon
+                    sx={{
+                      backgroundColor: "#DAC5A726",
+                      padding: "8px",
+                      borderRadius: "50%",
+                      width: "38px",
+                      height: "38px",
+                      color: "#DAC5A799",
+                    }}
+                  />
+                </ListItemIcon>
+                <ListItemText
+                  sx={{ color: "#DAC5A799" }}
+                  primary="GitHubIcon"
                 />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="Instagram" />
-            </ListItemButton>
-            <ListItemButton>
-              <ListItemIcon>
-                <LinkedInIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="LinkedIn" />
-            </ListItemButton>{" "}
-            <ListItemButton>
-              <ListItemIcon>
-                <GitHubIcon
-                  sx={{
-                    backgroundColor: "#DAC5A726",
-                    padding: "8px",
-                    borderRadius: "50%",
-                    width: "38px",
-                    height: "38px",
-                    color: "#DAC5A799",
-                  }}
-                />
-              </ListItemIcon>
-              <ListItemText sx={{ color: "#DAC5A799" }} primary="GitHubIcon" />
-            </ListItemButton>
-          </List>
+              </ListItemButton>
+            </Link>
+          </Stack>
         </Stack>
       </Stack>
     </>
