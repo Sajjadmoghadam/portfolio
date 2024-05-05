@@ -182,7 +182,7 @@ export default function About() {
                     <img
                       width="100%"
                       height="100%"
-                      src="assets/aboutimg2.jfif"
+                      src="assets/me2.JPG"
                       alt="img"
                     />
                   </Box>
