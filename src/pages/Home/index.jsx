@@ -179,7 +179,7 @@ export default function Home() {
       >
         <Box
           sx={{
-            backgroundImage: "url(assets/homepagePhoto.png)",
+            backgroundImage: "url(assets/me3.JPG)",
             width: "100%",
             height: "100vh",
             backgroundPosition: "top",
@@ -437,14 +437,9 @@ export default function Home() {
             }}
           >
             <Atropos rotate="true">
-              {/* <Image
-              src="assets/HomepageIMG1.png"
-              showLoading
-              duration={325}
-              /> */}
               <img
                 className="img1"
-                src="assets/HomepageIMG1.png"
+                src="assets/ecommerce/ecomm-img1.png"
                 alt="img"
                 style={{ width: "100%" }}
               />
@@ -452,13 +447,13 @@ export default function Home() {
             <Atropos rotate="true">
               <img
                 className="img2"
-                src="assets/HomepageIMG2.png"
+                src="assets/pannel/panel-img1.png"
                 alt="img"
                 style={{ width: "100%" }}
               />
             </Atropos>
           </Stack>
-          <Stack flexDirection={"row"} sx={{ mt: 3, gap: 2, width: "100%" }}>
+          {/* <Stack flexDirection={"row"} sx={{ mt: 3, gap: 2, width: "100%" }}>
             <Atropos rotate="true">
               <img
                 className="img3"
@@ -475,7 +470,7 @@ export default function Home() {
                 style={{ width: "100%" }}
               />
             </Atropos>
-          </Stack>
+          </Stack> */}
         </Box>
         <Box sx={{ mt: "150px", width: "100%" }}>
           <Box

@@ -2,6 +2,15 @@ import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import "./style.css";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 
 export default function Work() {
   useGSAP(() => {
@@ -28,7 +37,7 @@ export default function Work() {
           flexDirection: "column",
           overflow: "hidden",
           pt: "150px",
-          pb: 10,
+          pb: 18,
         }}
       >
         <Stack
@@ -58,13 +67,43 @@ export default function Work() {
             flexDirection={"row"}
             sx={{
               mt: 3,
-              gap: 2,
+              // gap: 2,
               width: "100%",
               alignItems: "center",
               justifyContent: "center",
+              px:10,
+              
             }}
           >
-            <img
+            <Swiper
+              cssMode={true}
+              navigation={true}
+              pagination={true}
+              mousewheel={true}
+              keyboard={true}
+              modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+              className="mySwiper"
+            >
+              <SwiperSlide><img src="assets/ecommerce/ecomm-img1.png" alt="img"/></SwiperSlide>
+              <SwiperSlide><img src="assets/ecommerce/ecomm-img2.png" alt="img"/></SwiperSlide>
+              <SwiperSlide><img src="assets/ecommerce/ecomm-img3.png" alt="img"/></SwiperSlide>
+            </Swiper>
+            <Swiper
+              cssMode={true}
+              navigation={true}
+              pagination={true}
+              mousewheel={true}
+              keyboard={true}
+              modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+              className="mySwiper"
+            >
+              <SwiperSlide><img src="assets/pannel/panel-img1.png" alt="img"/></SwiperSlide>
+              <SwiperSlide><img src="assets/pannel/panel-img2.png" alt="img"/></SwiperSlide>
+              <SwiperSlide><img src="assets/pannel/panel-img3.png" alt="img"/></SwiperSlide>
+              <SwiperSlide><img src="assets/pannel/panel-img4.png" alt="img"/></SwiperSlide>
+              <SwiperSlide><img src="assets/pannel/panel-img5.png" alt="img"/></SwiperSlide>
+            </Swiper>
+            {/* <img
               src="assets/HomepageIMG1.png"
               alt="img"
               style={{ width: "35%" }}
@@ -73,9 +112,9 @@ export default function Work() {
               src="assets/HomepageIMG2.png"
               alt="img"
               style={{ width: "35%" }}
-            />
+            /> */}
           </Stack>
-          <Stack
+          {/* <Stack
             flexDirection={"row"}
             sx={{
               mt: 3,
@@ -95,7 +134,7 @@ export default function Work() {
               alt="img"
               style={{ width: "35%" }}
             />
-          </Stack>
+          </Stack> */}
         </Box>
       </Stack>
     </>
