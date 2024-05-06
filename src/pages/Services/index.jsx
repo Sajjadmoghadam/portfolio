@@ -8,6 +8,9 @@ import Atropos from "atropos/react";
 import "atropos/css";
 import Image from "mui-image";
 import { Link } from "react-router-dom";
+
+
+
 export default function Services() {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {

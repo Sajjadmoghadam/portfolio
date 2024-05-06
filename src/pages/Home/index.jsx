@@ -10,7 +10,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Atropos from "atropos/react";
 import "atropos/css";
-// import Image from 'mui-image';
+
 
 const Root = styled("div")(({ theme }) => ({
   width: "100%",
