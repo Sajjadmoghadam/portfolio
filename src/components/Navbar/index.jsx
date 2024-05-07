@@ -142,7 +142,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            yousef
+            Amirreza
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <Link to={"/"} style={{ textDecoration: "none" }}>

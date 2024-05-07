@@ -94,7 +94,7 @@ export default function Contact() {
             <img
               width="100%"
               height="100%"
-              src="./assets/homepagePhoto.png"
+              src="./assets/IMG_0997.JPEG"
               alt=""
               className="contact-img"
             />

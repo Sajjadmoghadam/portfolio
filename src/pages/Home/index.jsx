@@ -179,7 +179,7 @@ export default function Home() {
       >
         <Box
           sx={{
-            backgroundImage: "url(assets/me3.JPG)",
+            backgroundImage: "url(assets/IMG_0997.JPEG)",
             width: "100%",
             height: "100vh",
             backgroundPosition: "top",
@@ -189,6 +189,7 @@ export default function Home() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "end",
+            
           }}
           className="home-header"
         >
@@ -196,14 +197,14 @@ export default function Home() {
             sx={{
               color: "#DAC5A7",
               textAlign: "center",
-              fontSize: { lg: "90px", md: "60px", sm: "40px", xs: "30px" },
+              fontSize: { lg: "70px", md: "60px", sm: "40px", xs: "30px" },
             }}
           >
             Full Stack <br />{" "}
             <Typography
               sx={{
                 fontStyle: "italic",
-                fontSize: { lg: "90px", md: "60px", sm: "40px", xs: "30px" },
+                fontSize: { lg: "70px", md: "60px", sm: "40px", xs: "30px" },
               }}
             >
               {" "}
@@ -429,11 +430,11 @@ export default function Home() {
             </Box>
           </Stack>
           <Stack
-            flexDirection={"row"}
             sx={{
               mt: 3,
               gap: 2,
               width: "100%",
+              flexDirection:{xs:'column',sm:'column',md:'row',lg:'row',xl:'row'}
             }}
           >
             <Atropos rotate="true">
@@ -1505,11 +1506,11 @@ export default function Home() {
         </Box>
         <Box
           sx={{
-            backgroundImage: "url(assets/homepagePhoto.png)",
+            backgroundImage: "url(assets/IMG_0997.JPEG)",
             width: "100%",
             height: "100vh",
-            backgroundPosition: "top",
-            backgroundSize: "700px",
+            backgroundPosition: "60% top",
+            backgroundSize: {xl:'900px',lg:'700px',md:'700px',sm:'500px',xs:'400px'},
             backgroundRepeat: "no-repeat",
             display: "flex",
             flexDirection: "column",

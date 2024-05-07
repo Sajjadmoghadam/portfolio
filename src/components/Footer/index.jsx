@@ -86,7 +86,7 @@ export default function Footer() {
               Social Communities :
             </Typography>
           </Stack>
-          <Stack direction={'row'} gap={'25px'}>
+          <Stack direction={{md:'row',xs:'column',sm:'column'}} gap={'25px'}>
             <Link
               href="https://www.linkedin.com/in/amirreza-mirshafiee-a029a025b"
               target="_blank"

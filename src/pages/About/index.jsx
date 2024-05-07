@@ -182,7 +182,7 @@ export default function About() {
                     <img
                       width="100%"
                       height="100%"
-                      src="assets/me2.JPG"
+                      src="assets/IMG_0980.PNG"
                       alt="img"
                     />
                   </Box>
