@@ -170,6 +170,7 @@ export default function Contact() {
                 <Button
                   variant="text"
                   onClick={handleClick}
+                  disabled={!email||!username||!message}
                   sx={{
                     backgroundColor: "#DAC5A7",
                     width: "100%",
