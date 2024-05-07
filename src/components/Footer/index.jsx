@@ -41,6 +41,7 @@ export default function Footer() {
               Premium web development, and SEO services to help your business
               stand out.
             </Typography>
+            <Link href='/services'>
             <Button
               sx={{
                 backgroundColor: "#DAC5A7",
@@ -64,6 +65,7 @@ export default function Footer() {
             >
               My Services
             </Button>
+            </Link>
           </Box>
         </Stack>
         <Stack
@@ -72,7 +74,7 @@ export default function Footer() {
             backgroundColor: "#171616",
             display: "flex",
             justifyContent: "center",
-            alignItems:'center',
+            alignItems: "center",
             flexDirection: { md: "row" },
             gap: 1,
           }}
@@ -86,9 +88,13 @@ export default function Footer() {
               Social Communities :
             </Typography>
           </Stack>
-          <Stack direction={{md:'row',xs:'column',sm:'column'}} gap={'25px'}>
+          
+          <Stack  
+          gap={'25px'}
+            flexDirection={{md:'row',xs:'column',sm:'column'}}
+          >
             <Link
-              href="https://www.linkedin.com/in/amirreza-mirshafiee-a029a025b"
+              href="https://www.instagram.com/amirwrezam?igsh=MTl6dGx6NzVqbHEyMw=="
               target="_blank"
               sx={{ textDecoration: "none" }}
             >

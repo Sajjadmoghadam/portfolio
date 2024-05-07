@@ -7,6 +7,9 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Atropos from "atropos/react";
 import "atropos/css";
 import Image from "mui-image";
+import { Link } from "react-router-dom";
+
+
 
 export default function Services() {
   gsap.registerPlugin(ScrollTrigger);
@@ -66,7 +69,7 @@ export default function Services() {
           height: "100%",
           backgroundColor: "#000000",
           flexDirection: "column",
-          pt: "200px",
+          pt: "20px",
           pb: 10,
         }}
       >
@@ -81,44 +84,50 @@ export default function Services() {
             textAlign: "center",
           }}
         >
-          <Box className="services-header">
-            <Typography variant="h3" sx={{ color: "#DAC5A7" }}>
-              Full Stack Developer
-            </Typography>
-            <Typography variant="h2" sx={{ color: "#DAC5A7" }}>
-              Mern Stack
-            </Typography>
-            <Typography variant="body1" sx={{ color: "#DAC5A799" }}>
-              Premium Front-End and Back-End development, and SEO services to
-              help your business stand out.
-            </Typography>
-            <Button
-              sx={{ color: "#DAC5A7", fontSize: "13px", marginTop: "30px" }}
-              startIcon={
-                <SouthIcon
-                  fontSize="small"
-                  sx={{
-                    color: "#DAC5A7",
-                    borderRadius: "50%",
-                    border: "1px solid #DAC5A726",
-                    padding: "5px",
-                  }}
-                />
-              }
+        <Box
+          sx={{
+            backgroundImage: "url(assets/homepagePhoto.png)",
+            width: "100%",
+            height: "100vh",
+            backgroundPosition: "top",
+            backgroundSize: "700px",
+            backgroundRepeat: "no-repeat",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "end",
+          }}
+          className="home-header"
+        >
+          <Typography
+            sx={{
+              color: "#DAC5A7",
+              textAlign: "center",
+              fontSize: { lg: "90px", md: "60px", sm: "40px", xs: "30px" },
+            }}
+          >
+            Full Stack <br />{" "}
+            <Typography
+              sx={{
+                fontStyle: "italic",
+                fontSize: { lg: "90px", md: "60px", sm: "40px", xs: "30px" },
+              }}
             >
-              My Services
-            </Button>
-          </Box>
-
-          <Box mt={5} sx={{ width: "100%", height: "100%" }}>
-            <img
-              className="services-header-img"
-              width="50%"
-              height="100%"
-              src="assets/servicesimg1.png"
-              alt="img"
-            />
-          </Box>
+              {" "}
+              Mern Developer
+            </Typography>
+          </Typography>
+          <Typography
+            sx={{
+              color: "rgba(255,255,255,0.3)",
+              textAlign: "center",
+              fontSize: "18px",
+            }}
+          >
+            Premium Front-End and Back-End development and SEO <br /> services
+            in help your business stand out
+          </Typography>
+        </Box>
         </Stack>
         <Stack
           sx={{
